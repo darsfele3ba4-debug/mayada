@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>درس في لعبة | الأستاذة ميادة محمد - الصف الثالث الإعدادي</title>
+<meta name="description" content="منصة ألعاب تعليمية تفاعلية في اللغة العربية للصف الثالث الإعدادي مع الأستاذة ميادة محمد: ٧ دروس و٤٢ لعبة و٧٠٠ سؤال">
+<meta property="og:title" content="درس في لعبة | الأستاذة ميادة محمد">
+<meta property="og:description" content="ألعاب تعليمية تفاعلية في اللغة العربية - الصف الثالث الإعدادي">
+<meta property="og:image" content="https://darsfele3ba4-debug.github.io/mayada/logo.jpeg">
+<meta name="theme-color" content="#065f46">
+<link rel="icon" href="logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--em9:#053b2e;--em8:#065f46;--em7:#047857;--em5:#10b981;--em0:#ecfdf5;--gold:#c9972c;--gold2:#e9c46a;--ink:#10221c;--muted:#5b6f67;--line:#dbe9e2;--bg:#f3faf6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Cairo',system-ui,sans-serif;background:var(--bg);color:var(--ink);-webkit-tap-highlight-color:transparent;overflow-x:hidden}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.hero{position:relative;background:radial-gradient(ellipse at 50% -20%,#0f7a5a 0,var(--em9) 55%,#021f18 100%);color:#fff;padding:34px 0 70px;overflow:hidden;text-align:center}
+.hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(233,196,106,.22) 1px,transparent 1.5px);background-size:22px 22px;mask-image:linear-gradient(180deg,#000,transparent 85%);-webkit-mask-image:linear-gradient(180deg,#000,transparent 85%)}
+.logo{position:relative;width:150px;height:150px;border-radius:50%;margin:0 auto 14px;background:#000;border:3px solid var(--gold2);box-shadow:0 0 0 8px rgba(233,196,106,.12),0 20px 40px rgba(0,0,0,.4);overflow:hidden}
+.logo img{width:100%;height:100%;object-fit:cover;transform:scale(1.18)}
+.hero small{position:relative;display:inline-block;font-weight:800;color:var(--gold2);letter-spacing:.5px;font-size:.9rem}
+.hero h1{position:relative;font-size:clamp(1.9rem,6vw,2.8rem);font-weight:900;line-height:1.3;margin:2px 0}
+.hero h1 span{color:var(--gold2)}
+.hero p{position:relative;color:#bfe9d6;font-weight:700;font-size:1.02rem}
+.stats{position:relative;display:flex;justify-content:center;gap:10px;margin-top:18px;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.08);border:1px solid rgba(233,196,106,.35);border-radius:14px;padding:8px 16px;min-width:96px}
+.stat b{display:block;font-size:1.5rem;font-weight:900;color:var(--gold2);line-height:1.2}
+.stat span{font-size:.8rem;color:#d7f2e6;font-weight:700}
+.games{margin:-42px auto 0;position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 14px 34px rgba(6,95,70,.12);padding:14px;display:grid;grid-template-columns:repeat(6,1fr);gap:8px;text-align:center}
+.games div{font-size:.78rem;font-weight:800;color:var(--muted)}
+.games i{display:block;font-style:normal;font-size:1.6rem;margin-bottom:2px}
+@media(max-width:620px){.games{grid-template-columns:repeat(3,1fr)}}
+.sec-h{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:28px 0 14px;flex-wrap:wrap}
+.sec-h h2{font-size:1.3rem;font-weight:900;color:var(--em9);display:flex;align-items:center;gap:8px}
+.sec-h h2:before{content:"";width:6px;height:24px;border-radius:4px;background:var(--gold)}
+.all{display:inline-flex;align-items:center;gap:6px;background:var(--em8);color:#fff;font-weight:800;padding:9px 16px;border-radius:12px;font-size:.88rem}
+.all:hover{background:var(--em7)}
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.lesson{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;display:flex;gap:14px;transition:transform .2s,box-shadow .2s}
+.lesson:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(6,95,70,.12)}
+.lnum{width:52px;height:52px;flex-shrink:0;border-radius:15px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#3b2a06;font-weight:900;font-size:1.45rem;display:grid;place-items:center}
+.lbody{flex:1;min-width:0}
+.cat{display:inline-block;font-size:.74rem;font-weight:800;padding:2px 10px;border-radius:99px}
+.lesson h3{font-size:1.08rem;font-weight:900;line-height:1.6;margin:4px 0 0;color:var(--ink)}
+.meta{font-size:.8rem;color:var(--muted);font-weight:700}
+.lact{display:flex;gap:8px;margin-top:10px}
+.go{flex:1;text-align:center;background:var(--em7);color:#fff;text-decoration:none;font-weight:900;padding:9px 10px;border-radius:12px;font-size:.92rem}
+.go:hover{background:var(--em8)}
+.cp{display:inline-flex;align-items:center;gap:5px;border:2px solid var(--line);border-radius:12px;padding:7px 11px;font-weight:800;font-size:.85rem;color:var(--em8);background:#fff;transition:.15s}
+.cp:hover{border-color:var(--em5);background:var(--em0)}
+.cp svg{width:16px;height:16px}
+.cp.done{border-color:#16a34a;background:#dcfce7;color:#15803d}
+.contact{margin:30px 0 10px;background:linear-gradient(135deg,var(--em9),var(--em7));color:#fff;border-radius:20px;padding:20px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.contact h3{font-weight:900;font-size:1.15rem}
+.contact p{color:#c8f3df;font-weight:700;font-size:.9rem}
+.wa{display:inline-flex;align-items:center;gap:8px;background:#25d366;color:#fff;text-decoration:none;font-weight:900;padding:11px 18px;border-radius:14px}
+.wa svg{width:20px;height:20px}
+footer{text-align:center;color:var(--muted);font-size:.82rem;padding:20px 16px 30px;font-weight:700}
+footer b{color:var(--em8)}
+#toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,30px);opacity:0;background:var(--em9);color:#fff;font-weight:800;padding:10px 18px;border-radius:12px;transition:.25s;z-index:99;max-width:92vw;text-align:center}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="wrap">
+    <div class="logo"><img src="logo.jpeg" alt="شعار الأستاذة ميادة محمد"></div>
+    <small>منصة درس في لعبة</small>
+    <h1>العب وتعلَّم مع <span>الأستاذة ميادة محمد</span></h1>
+    <p>اللغة العربية · الصف الثالث الإعدادي</p>
+    <div class="stats">
+      <div class="stat"><b>٧</b><span>دروس</span></div>
+      <div class="stat"><b>٤٢</b><span>لعبة</span></div>
+      <div class="stat"><b>٧٠٠</b><span>سؤال</span></div>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+  <div class="games">
+    <div><i>🫧</i>الفقاعات المتساقطة</div>
+    <div><i>🎯</i>اصطياد الأهداف</div>
+    <div><i>🧠</i>الذاكرة</div>
+    <div><i>⚖️</i>صح وخطأ</div>
+    <div><i>⚽</i>تسجيل الأهداف</div>
+    <div><i>🏆</i>تحدي العباقرة</div>
+  </div>
+
+  <div class="sec-h">
+    <h2>الدروس</h2>
+    <button class="all" onclick="copyAll(this)">📋 نسخ روابط كل الدروس</button>
+  </div>
+  <div class="list">
+    <article class="lesson">
+      <div class="lnum">١</div>
+      <div class="lbody">
+        <span class="cat" style="background:#e0f2fe;color:#0369a1">🎧 استماع</span>
+        <h3>نَصُّ اسْتِمَاعٍ: آدَابُ التَّعَامُلِ مَعَ الوَالِدَيْنِ</h3>
+        <p class="meta">٦ ألعاب · ١٠٠ سؤال</p>
+        <div class="lact">
+          <a class="go" href="lesson-1/">ابدأ الدرس ←</a>
+          <button class="cp" data-slug="lesson-1" data-title="نص استماع: آداب التعامل مع الوالدين" onclick="copyOne(this)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+            <span>نسخ الرابط</span>
+          </button>
+        </div>
+      </div>
+    </article>
+    <article class="lesson">
+      <div class="lnum">٢</div>
+      <div class="lbody">
+        <span class="cat" style="background:#dcfce7;color:#15803d">📖 قراءة</span>
+        <h3>نَصُّ قِرَاءَةٍ: أَغْلَى مِنَ الذَّهَبِ</h3>
+        <p class="meta">٦ ألعاب · ١٠٠ سؤال</p>
+        <div class="lact">
+          <a class="go" href="lesson-2/">ابدأ الدرس ←</a>
+          <button class="cp" data-slug="lesson-2" data-title="نص قراءة: أغلى من الذهب" onclick="copyOne(this)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+            <span>نسخ الرابط</span>
+          </button>
+        </div>
+      </div>
+    </article>
+    <article class="lesson">
+      <div class="lnum">٣</div>
+      <div class="lbody">
+        <span class="cat" style="background:#ede9fe;color:#6d28d9">✍️ نحو</span>
+        <h3>القَوَاعِدُ النَّحْوِيَّةُ: اسْمُ الفَاعِلِ</h3>
+        <p class="meta">٦ ألعاب · ١٠٠ سؤال</p>
+        <div class="lact">
+          <a class="go" href="lesson-3/">ابدأ الدرس ←</a>
+          <button class="cp" data-slug="lesson-3" data-title="القواعد النحوية: اسم الفاعل" onclick="copyOne(this)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+            <span>نسخ الرابط</span>
+          </button>
+        </div>
+      </div>
+    </article>
+    <article class="lesson">
+      <div class="lnum">٤</div>
+      <div class="lbody">
+        <span class="cat" style="background:#dcfce7;color:#15803d">📖 قراءة</span>
+        <h3>نَصُّ قِرَاءَةٍ: الصَّدَاقَةُ</h3>
+        <p class="meta">٦ ألعاب · ١٠٠ سؤال</p>
+        <div class="lact">
+          <a class="go" href="lesson-4/">ابدأ الدرس ←</a>
+          <button class="cp" data-slug="lesson-4" data-title="نص قراءة: الصداقة" onclick="copyOne(this)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+            <span>نسخ الرابط</span>
+          </button>
+        </div>
+      </div>
+    </article>
+    <article class="lesson">
+      <div class="lnum">٥</div>
+      <div class="lbody">
+        <span class="cat" style="background:#ede9fe;color:#6d28d9">✍️ نحو</span>
+        <h3>القَوَاعِدُ النَّحْوِيَّةُ: اسْمُ المَفْعُولِ</h3>
+        <p class="meta">٦ ألعاب · ١٠٠ سؤال</p>
+        <div class="lact">
+          <a class="go" href="lesson-5/">ابدأ الدرس ←</a>
+          <button class="cp" data-slug="lesson-5" data-title="القواعد النحوية: اسم المفعول" onclick="copyOne(this)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+            <span>نسخ الرابط</span>
+          </button>
+        </div>
+      </div>
+    </article>
+    <article class="lesson">
+      <div class="lnum">٦</div>
+      <div class="lbody">
+        <span class="cat" style="background:#fce7f3;color:#be185d">🪶 شعر</span>
+        <h3>نَصٌّ شِعْرِيٌّ: تَحِيَّةٌ لِلشَّبَابِ</h3>
+        <p class="meta">٦ ألعاب · ١٠٠ سؤال</p>
+        <div class="lact">
+          <a class="go" href="lesson-6/">ابدأ الدرس ←</a>
+          <button class="cp" data-slug="lesson-6" data-title="نص شعري: تحية للشباب" onclick="copyOne(this)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+            <span>نسخ الرابط</span>
+          </button>
+        </div>
+      </div>
+    </article>
+    <article class="lesson">
+      <div class="lnum">٧</div>
+      <div class="lbody">
+        <span class="cat" style="background:#fef3c7;color:#b45309">🔤 إملاء</span>
+        <h3>القَوَاعِدُ الإِمْلَائِيَّةُ: الأَلِفُ اللَّيِّنَةُ</h3>
+        <p class="meta">٦ ألعاب · ١٠٠ سؤال</p>
+        <div class="lact">
+          <a class="go" href="lesson-7/">ابدأ الدرس ←</a>
+          <button class="cp" data-slug="lesson-7" data-title="القواعد الإملائية: الألف اللينة" onclick="copyOne(this)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+            <span>نسخ الرابط</span>
+          </button>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div class="contact">
+    <div>
+      <h3>عندك سؤال؟</h3>
+      <p>تواصل مع الأستاذة ميادة محمد مباشرة على واتساب</p>
+    </div>
+    <a class="wa" href="https://wa.me/201150659972" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.2.1.7-.1 1.3z"/></svg>تواصل على واتساب</a>
+  </div>
+</main>
+
+<footer>جميع الحقوق محفوظة © 2026 — <b>منصة درس في لعبة</b> · الأستاذة ميادة محمد</footer>
+<div id="toast"></div>
+
+<script>
+"use strict";
+const SITE = "https://darsfele3ba4-debug.github.io/mayada/";
+const LESSONS = [{"slug": "lesson-1", "plain": "نص استماع: آداب التعامل مع الوالدين", "num": 1}, {"slug": "lesson-2", "plain": "نص قراءة: أغلى من الذهب", "num": 2}, {"slug": "lesson-3", "plain": "القواعد النحوية: اسم الفاعل", "num": 3}, {"slug": "lesson-4", "plain": "نص قراءة: الصداقة", "num": 4}, {"slug": "lesson-5", "plain": "القواعد النحوية: اسم المفعول", "num": 5}, {"slug": "lesson-6", "plain": "نص شعري: تحية للشباب", "num": 6}, {"slug": "lesson-7", "plain": "القواعد الإملائية: الألف اللينة", "num": 7}];
+function base(){
+  if (!location.protocol.startsWith("http")) return SITE;
+  let p = location.href.split("#")[0].split("?")[0];
+  p = p.replace(/index\.html$/, "");
+  return p.endsWith("/") ? p : p + "/";
+}
+const urlOf = slug => base() + slug + "/";
+function toast(m){ const t=document.getElementById("toast"); t.textContent=m; t.classList.add("show"); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("show"),2000); }
+function fallbackCopy(txt){ const ta=document.createElement("textarea"); ta.value=txt; ta.style.position="fixed"; ta.style.opacity="0"; document.body.appendChild(ta); ta.select(); let ok=false; try{ok=document.execCommand("copy");}catch(e){} ta.remove(); return ok; }
+function copyText(txt){
+  if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(txt).then(()=>true).catch(()=>fallbackCopy(txt));
+  return Promise.resolve(fallbackCopy(txt));
+}
+function copyOne(btn){
+  copyText(urlOf(btn.dataset.slug)).then(ok => {
+    if (!ok) return toast("تعذّر النسخ، افتح الدرس وانسخ الرابط من شريط العنوان");
+    btn.classList.add("done"); btn.querySelector("span").textContent = "تم النسخ ✔";
+    toast("تم نسخ رابط: " + btn.dataset.title);
+    setTimeout(()=>{ btn.classList.remove("done"); btn.querySelector("span").textContent = "نسخ الرابط"; }, 2000);
+  });
+}
+function copyAll(btn){
+  const txt = ["📚 درس في لعبة مع الأستاذة ميادة محمد", "اللغة العربية - الصف الثالث الإعدادي", "",
+    ...LESSONS.map(l => "📖 الدرس " + l.num + ": " + l.plain + "\n" + urlOf(l.slug) + "\n")].join("\n");
+  copyText(txt).then(ok => toast(ok ? "تم نسخ روابط الدروس السبعة ✔" : "تعذّر النسخ"));
+}
+</script>
+</body>
+</html>

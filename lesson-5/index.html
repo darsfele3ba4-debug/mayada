@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>القواعد النحوية: اسم المفعول | درس في لعبة - الأستاذة ميادة محمد</title>
+<meta name="description" content="ألعاب تعليمية تفاعلية لدرس القواعد النحوية: اسم المفعول - الصف الثالث الإعدادي - مع الأستاذة ميادة محمد">
+<meta property="og:title" content="القواعد النحوية: اسم المفعول | الأستاذة ميادة محمد">
+<meta property="og:description" content="6 ألعاب تعليمية و100 سؤال - الصف الثالث الإعدادي">
+<meta property="og:image" content="https://darsfele3ba4-debug.github.io/mayada/logo.jpeg">
+<meta name="theme-color" content="#065f46">
+<link rel="icon" href="../logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --em9:#053b2e; --em8:#065f46; --em7:#047857; --em6:#059669; --em5:#10b981; --em1:#d1fae5; --em0:#ecfdf5;
+  --gold:#c9972c; --gold2:#e9c46a; --gold0:#fdf6e3;
+  --ink:#10221c; --muted:#5b6f67; --line:#dbe9e2;
+  --ok:#16a34a; --bad:#dc2626; --rose:#e8789a;
+  --card:#ffffff; --bg:#f3faf6;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:'Cairo',system-ui,sans-serif;background:var(--bg);color:var(--ink);-webkit-tap-highlight-color:transparent;overflow-x:hidden;
+  background-image:radial-gradient(circle at 10% 0%,#e3f6ec 0,transparent 40%),radial-gradient(circle at 100% 30%,#fbf3dc 0,transparent 35%);background-attachment:fixed}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:linear-gradient(90deg,var(--em9),var(--em7));color:#fff;box-shadow:0 4px 18px rgba(5,59,46,.25)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:10px;padding-bottom:10px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.brand img{width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--gold2);background:#000;flex-shrink:0}
+.brand h1{font-size:1.05rem;font-weight:900;line-height:1.2}
+.brand p{font-size:.78rem;color:#c8f3df;font-weight:700}
+.hbtns{display:flex;gap:6px;flex-shrink:0}
+.hbtn{display:inline-flex;align-items:center;gap:5px;padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);font-size:.8rem;font-weight:700;color:#fff;text-decoration:none;transition:.2s}
+.hbtn:hover{background:rgba(255,255,255,.25)}
+.hbtn svg{width:16px;height:16px}
+.hbtn.wa{background:#25d366;border-color:#25d366}
+@media(max-width:520px){.hbtn .t{display:none}.hbtn{padding:8px}}
+
+/* Lesson banner */
+.banner{margin:18px 0 6px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;display:flex;align-items:center;gap:14px;box-shadow:0 6px 20px rgba(6,95,70,.06)}
+.banner .num{width:54px;height:54px;border-radius:16px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#3b2a06;font-weight:900;font-size:1.5rem;display:grid;place-items:center;flex-shrink:0}
+.banner small{color:var(--gold);font-weight:800;font-size:.8rem}
+.banner h2{font-size:1.2rem;font-weight:900;color:var(--em8);line-height:1.5}
+
+/* Menu */
+.menu-title{margin:18px 0 10px;font-weight:900;font-size:1.05rem;color:var(--em9);display:flex;align-items:center;gap:8px}
+.menu-title:before{content:"";width:6px;height:22px;border-radius:4px;background:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-bottom:28px}
+.gcard{position:relative;text-align:right;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;gap:14px;align-items:center;transition:transform .2s,box-shadow .2s;overflow:hidden}
+.gcard:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(6,95,70,.12)}
+.gcard:active{transform:scale(.98)}
+.gcard .ic{width:60px;height:60px;border-radius:16px;display:grid;place-items:center;font-size:1.9rem;flex-shrink:0}
+.gcard h3{font-size:1.05rem;font-weight:900;color:var(--ink)}
+.gcard p{font-size:.82rem;color:var(--muted);line-height:1.6;margin-top:2px}
+.gcard .tag{display:inline-block;margin-top:6px;font-size:.72rem;font-weight:800;padding:2px 10px;border-radius:999px;background:var(--em0);color:var(--em7)}
+
+/* Game screen */
+#game{display:none;padding-bottom:30px}
+.gbar{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:16px 0 10px}
+.gbar .back{display:inline-flex;align-items:center;gap:4px;font-weight:800;color:var(--em8);background:var(--card);border:1px solid var(--line);padding:7px 12px;border-radius:999px;font-size:.85rem}
+.gbar .gt{font-weight:900;color:var(--em9);font-size:1.05rem;display:flex;align-items:center;gap:6px}
+.chips{display:flex;gap:6px}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 11px;font-weight:800;font-size:.82rem;white-space:nowrap}
+.chip.ok{color:var(--ok)} .chip.bad{color:var(--bad)}
+.prog{height:8px;background:#e2efe8;border-radius:99px;overflow:hidden;margin-bottom:12px}
+.prog i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--em5),var(--gold2));transition:width .4s}
+.qbox{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 18px;font-size:1.15rem;font-weight:800;line-height:1.8;text-align:center;box-shadow:0 6px 18px rgba(6,95,70,.06);margin-bottom:12px;position:relative}
+.qbox .qn{position:absolute;top:-11px;right:16px;background:var(--em7);color:#fff;font-size:.72rem;padding:2px 10px;border-radius:99px}
+.shake{animation:shake .45s}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+
+/* Feedback toast */
+#fb{position:fixed;left:50%;top:84px;transform:translate(-50%,-20px);opacity:0;z-index:80;pointer-events:none;transition:.25s;padding:10px 18px;border-radius:14px;font-weight:900;color:#fff;box-shadow:0 10px 30px rgba(0,0,0,.2);max-width:92vw;text-align:center;line-height:1.7}
+#fb.show{opacity:1;transform:translate(-50%,0)}
+#fb.ok{background:var(--ok)} #fb.bad{background:var(--bad)}
+#fb small{display:block;font-weight:700;font-size:.85rem;opacity:.95}
+
+/* Option buttons (shared) */
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:560px){.opts{grid-template-columns:1fr}}
+.opt{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:12px 14px;font-weight:800;font-size:1rem;line-height:1.6;text-align:right;display:flex;gap:10px;align-items:center;transition:.15s}
+.opt:hover{border-color:var(--em5);background:var(--em0)}
+.opt .k{width:30px;height:30px;border-radius:9px;background:var(--em0);color:var(--em7);display:grid;place-items:center;font-weight:900;flex-shrink:0}
+.opt.right{border-color:var(--ok);background:#dcfce7}
+.opt.wrong{border-color:var(--bad);background:#fee2e2}
+.opt[disabled]{cursor:default}
+
+/* Arena (bubbles / shooting) */
+.arena{position:relative;height:min(62vh,540px);min-height:380px;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);touch-action:manipulation}
+.arena.sky{background:linear-gradient(180deg,#e0f2fe 0%,#f0f9ff 60%,#ecfdf5 100%)}
+.arena.sky:after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:repeating-linear-gradient(90deg,#f87171 0 14px,#fff 14px 28px);opacity:.8}
+.bubble{position:absolute;top:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px 12px;min-height:62px;border-radius:999px;font-weight:900;font-size:1rem;line-height:1.4;color:#0c4a6e;
+  background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.95) 0 12%,rgba(255,255,255,.35) 13% 30%,transparent 31%),linear-gradient(160deg,#bae6fd,#7dd3fc 55%,#38bdf8);
+  border:2px solid rgba(255,255,255,.85);box-shadow:0 8px 18px rgba(14,116,144,.25),inset 0 -6px 12px rgba(2,132,199,.25);will-change:transform;user-select:none}
+.bubble:active{filter:brightness(.95)}
+.bubble.pop{animation:pop .35s forwards}
+.bubble.good{background:linear-gradient(160deg,#bbf7d0,#4ade80);color:#14532d}
+.bubble.badb{background:linear-gradient(160deg,#fecaca,#f87171);color:#7f1d1d}
+@keyframes pop{to{transform:var(--tf) scale(1.5);opacity:0}}
+
+.arena.range{background:
+  linear-gradient(180deg,rgba(255,255,255,.0),rgba(255,255,255,.0)),
+  repeating-linear-gradient(180deg,#fff7ed 0 calc(25% - 2px),#fde68a calc(25% - 2px) 25%);cursor:crosshair}
+.target{position:absolute;left:0;top:0;display:flex;align-items:center;gap:8px;padding:8px 14px 8px 10px;background:#fff;border:2px solid #fecaca;border-radius:999px;font-weight:900;font-size:1rem;box-shadow:0 6px 14px rgba(185,28,28,.15);white-space:nowrap;will-change:transform;user-select:none;cursor:crosshair}
+.target .eye{width:34px;height:34px;border-radius:50%;flex-shrink:0;background:radial-gradient(circle,#dc2626 0 18%,#fff 19% 38%,#dc2626 39% 58%,#fff 59% 78%,#dc2626 79%)}
+.target.hit{animation:hit .5s forwards}
+.target.good{border-color:var(--ok);background:#dcfce7}
+.target.badt{border-color:var(--bad);background:#fee2e2}
+@keyframes hit{50%{transform:var(--tf) scale(1.2) rotate(-8deg)}100%{transform:var(--tf) scale(.2);opacity:0}}
+.shot{position:absolute;width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;border:3px solid #dc2626;pointer-events:none;animation:shot .45s forwards;z-index:20}
+@keyframes shot{to{transform:scale(4);opacity:0}}
+
+/* True / False */
+.tf{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tfb{border-radius:18px;padding:18px 10px;font-size:1.35rem;font-weight:900;color:#fff;display:flex;flex-direction:column;align-items:center;gap:4px;box-shadow:0 8px 0 rgba(0,0,0,.15);transition:transform .1s}
+.tfb:active{transform:translateY(4px);box-shadow:0 4px 0 rgba(0,0,0,.15)}
+.tfb b{font-size:2.2rem;line-height:1}
+.tfb.t{background:linear-gradient(160deg,#22c55e,#15803d)}
+.tfb.f{background:linear-gradient(160deg,#f87171,#b91c1c)}
+.tfb.dim{opacity:.35}
+.tfb.mark{outline:4px solid var(--gold2);outline-offset:3px}
+.tfq{min-height:150px;display:flex;align-items:center;justify-content:center;font-size:1.3rem}
+
+/* Goal */
+.pitch{position:relative;height:300px;border-radius:var(--r);overflow:hidden;margin-bottom:12px;border:1px solid var(--line);
+  background:repeating-linear-gradient(90deg,#22a356 0 40px,#1f9a50 40px 80px)}
+.pitch .box{position:absolute;left:4%;right:4%;bottom:-2px;height:42%;border:3px solid rgba(255,255,255,.7);border-bottom:0}
+.goal{position:absolute;left:12%;right:12%;top:8%;height:52%;border:7px solid #fff;border-bottom:0;border-radius:6px 6px 0 0;
+  background:repeating-linear-gradient(45deg,rgba(255,255,255,.28) 0 2px,transparent 2px 13px),repeating-linear-gradient(-45deg,rgba(255,255,255,.28) 0 2px,transparent 2px 13px),rgba(0,0,0,.08);box-shadow:0 6px 0 rgba(0,0,0,.08)}
+.goal.net{animation:net .5s}
+@keyframes net{30%{transform:scale(1.03,1.05)}60%{transform:scale(.99)}}
+.corner{position:absolute;width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:50%;background:var(--gold2);color:#3b2a06;font-weight:900;display:grid;place-items:center;font-size:.95rem;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.25);z-index:2}
+.keeper{position:absolute;left:50%;top:60%;width:64px;height:84px;margin:-84px 0 0 -32px;transition:transform .45s cubic-bezier(.2,.8,.3,1);z-index:3;animation:sway 1.6s ease-in-out infinite}
+.keeper.dive{animation:none}
+@keyframes sway{0%,100%{transform:translateX(-14px)}50%{transform:translateX(14px)}}
+.ball{position:absolute;left:50%;top:86%;width:38px;height:38px;margin:-19px 0 0 -19px;font-size:34px;line-height:38px;text-align:center;z-index:4;transition:left .55s ease-out,top .55s ease-out,transform .55s ease-out}
+.ball.fly{transform:scale(.62) rotate(540deg)}
+.bigmsg{position:absolute;left:50%;top:38%;margin-left:-130px;width:260px;padding:6px 0;border-radius:16px;background:rgba(5,59,46,.82);text-align:center;font-size:1.9rem;font-weight:900;color:#fff;text-shadow:0 4px 0 rgba(0,0,0,.25);z-index:6;transform:scale(.3);opacity:0;transition:.3s}
+.bigmsg.show{transform:scale(1);opacity:1}
+.gopts .opt .k{background:var(--gold2);color:#3b2a06}
+
+/* Genius */
+.timer{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.timer .bar{flex:1;height:14px;border-radius:99px;background:#e2efe8;overflow:hidden}
+.timer .bar i{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--em5),var(--gold2));transition:width .2s linear}
+.timer .bar i.low{background:linear-gradient(90deg,#f97316,#dc2626)}
+.timer .sec{width:52px;height:52px;border-radius:50%;background:var(--em8);color:#fff;font-weight:900;font-size:1.2rem;display:grid;place-items:center;flex-shrink:0;border:3px solid var(--gold2)}
+.timer .sec.low{background:var(--bad);animation:pulse .6s infinite}
+@keyframes pulse{50%{transform:scale(1.08)}}
+
+/* Memory */
+.mround{text-align:center;font-weight:800;color:var(--muted);margin-bottom:10px}
+.mgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+@media(max-width:700px){.mgrid{grid-template-columns:repeat(2,1fr)}}
+.mcard{perspective:900px;height:118px}
+.mcard .in{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.mcard.open .in{transform:rotateY(180deg)}
+.mcard .fr,.mcard .bk{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:14px;display:flex;align-items:center;justify-content:center;padding:8px;text-align:center}
+.mcard .fr{background:linear-gradient(145deg,var(--em8),var(--em6));border:2px solid var(--gold2);color:var(--gold2);font-size:2rem;font-weight:900;box-shadow:0 6px 14px rgba(6,95,70,.2)}
+.mcard .fr img{width:56px;height:56px;border-radius:50%;object-fit:cover;opacity:.9;border:2px solid var(--gold2)}
+.mcard .bk{transform:rotateY(180deg);background:#fff;border:2px solid var(--line);flex-direction:column;gap:4px;font-weight:800;font-size:.86rem;line-height:1.5}
+.mcard .bk em{font-style:normal;font-size:.68rem;padding:1px 9px;border-radius:99px;font-weight:900}
+.mcard.q .bk em{background:var(--em0);color:var(--em7)}
+.mcard.a .bk em{background:var(--gold0);color:#8a6512}
+.mcard.a .bk{background:#fffdf6}
+.mcard.done .bk{border-color:var(--ok);background:#dcfce7}
+.mcard.miss .bk{border-color:var(--bad);background:#fee2e2}
+.mcard.done{animation:glow .5s}
+@keyframes glow{50%{transform:scale(1.05)}}
+
+/* Results */
+.res{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px 18px;text-align:center;box-shadow:0 10px 30px rgba(6,95,70,.08);animation:popin .4s}
+@keyframes popin{from{transform:scale(.9);opacity:0}}
+.ring{width:150px;height:150px;border-radius:50%;margin:6px auto 10px;display:grid;place-items:center;background:conic-gradient(var(--em5) calc(var(--p)*1%),#e5efe9 0)}
+.ring div{width:118px;height:118px;border-radius:50%;background:#fff;display:grid;place-items:center;align-content:center}
+.ring b{font-size:2rem;font-weight:900;color:var(--em8);line-height:1}
+.ring span{font-size:.8rem;color:var(--muted);font-weight:700}
+.stars{font-size:2rem;letter-spacing:4px;margin-bottom:4px}
+.res h3{font-size:1.3rem;font-weight:900;color:var(--em9)}
+.res .sub{color:var(--muted);font-weight:700;margin:4px 0 14px}
+.send{background:var(--em0);border:1px dashed var(--em5);border-radius:16px;padding:14px;margin:14px 0}
+.send label{display:block;font-weight:800;margin-bottom:8px;color:var(--em8)}
+.send input{width:100%;font-family:inherit;font-size:1rem;padding:11px 14px;border-radius:12px;border:2px solid var(--line);outline:none;text-align:center;font-weight:700}
+.send input:focus{border-color:var(--em5)}
+.send .warn{color:var(--bad);font-weight:800;font-size:.85rem;margin-top:6px;display:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:14px;font-weight:900;font-size:1rem;transition:.15s}
+.btn.wa{background:#25d366;color:#fff;width:100%;margin-top:10px;box-shadow:0 6px 0 #1a9e4b}
+.btn.wa:active{transform:translateY(3px);box-shadow:0 3px 0 #1a9e4b}
+.btn.pri{background:var(--em7);color:#fff}
+.btn.sec{background:#fff;border:2px solid var(--line);color:var(--em8)}
+.btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.review{text-align:right;margin-top:16px}
+.review h4{font-weight:900;color:var(--bad);margin-bottom:8px}
+.rv{border:1px solid #fde2e2;background:#fff8f8;border-radius:12px;padding:10px 12px;margin-bottom:8px;font-size:.9rem;line-height:1.7}
+.rv p{font-weight:800}
+.rv .y{color:var(--bad)} .rv .c{color:var(--ok);font-weight:800}
+
+footer{text-align:center;color:var(--muted);font-size:.82rem;padding:22px 16px 30px;font-weight:700}
+footer b{color:var(--em8)}
+
+.confetti{position:fixed;top:-12px;width:10px;height:14px;z-index:90;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(105vh) rotate(720deg)}}
+#toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,30px);opacity:0;background:var(--em9);color:#fff;font-weight:800;padding:10px 18px;border-radius:12px;transition:.25s;z-index:99}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <img src="../logo.jpeg" alt="شعار الأستاذة ميادة محمد">
+      <div>
+        <h1>درس في لعبة</h1>
+        <p>مع الأستاذة ميادة محمد</p>
+      </div>
+    </div>
+    <div class="hbtns">
+      <a class="hbtn" href="../" title="الصفحة الرئيسية"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg><span class="t">الرئيسية</span></a>
+      <button class="hbtn" onclick="copyLink()" title="نسخ رابط الدرس"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg><span class="t">نسخ الرابط</span></button>
+      <a class="hbtn wa" href="https://wa.me/201150659972" target="_blank" rel="noopener" title="تواصل مع الأستاذة ميادة"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 1.9 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.2.1.7-.1 1.3z"/></svg><span class="t">واتساب</span></a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="menu">
+    <div class="banner">
+      <div class="num">٥</div>
+      <div>
+        <small>الصف الثالث الإعدادي · الدرس الخامس</small>
+        <h2>القَوَاعِدُ النَّحْوِيَّةُ: اسْمُ المَفْعُولِ</h2>
+      </div>
+    </div>
+    <div class="menu-title">اختر لعبتك</div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="game">
+    <div class="gbar">
+      <button class="back" onclick="toMenu()">→ الألعاب</button>
+      <div class="gt" id="gTitle"></div>
+      <div class="chips"><span class="chip ok" id="cOk">✔ 0</span><span class="chip bad" id="cBad">✘ 0</span></div>
+    </div>
+    <div class="prog"><i id="pBar"></i></div>
+    <div id="stage"></div>
+  </section>
+</main>
+
+<footer>جميع الحقوق محفوظة © 2026 — <b>منصة درس في لعبة</b> · الأستاذة ميادة محمد</footer>
+
+<div id="fb"></div>
+<div id="toast"></div>
+
+<script>
+"use strict";
+const PHONE = "201150659972";
+const TEACHER = "الأستاذة ميادة محمد";
+const LESSON = {"num": 5, "title": "القَوَاعِدُ النَّحْوِيَّةُ: اسْمُ المَفْعُولِ", "plain": "القواعد النحوية: اسم المفعول", "games": {"bubbles": [{"q": "ما اسم المفعول من الفعل «زَيَّنَ»؟", "options": ["مُزَيِّن", "زائن", "مُزَيَّن", "زينة"], "ans": 2}, {"q": "ما اسم المفعول من الفعل «أهمَلَ»؟", "options": ["هامل", "مُهمِل", "إهمال", "مُهمَل"], "ans": 3}, {"q": "ما اسم المفعول من الفعل «وَطِنَ» (استَوطَنَ)؟", "options": ["مُستوطَن", "وطنيّ", "واطن", "مُستوطِن"], "ans": 0}, {"q": "ما اسم المفعول من الفعل «حَفِظَ»؟", "options": ["حفيظ", "أحفظ", "حافظ", "محفوظ"], "ans": 3}, {"q": "ما اسم المفعول من الفعل «قَدَّمَ» (المزيد بحرف)؟", "options": ["مُقدَّم", "مُقدِّم", "قادم", "قديم"], "ans": 0}, {"q": "ما اسم المفعول من الفعل «استَقبَلَ» (المزيد بثلاثة أحرف)؟", "options": ["مُستقبَل", "مُستقبِل", "قابل", "استقبال"], "ans": 0}, {"q": "ما اسم المفعول من الفعل «شَيَّدَ»؟", "options": ["مُشيَّد", "شيّاد", "شائد", "مُشيِّد"], "ans": 0}, {"q": "ما اسم المفعول من الفعل «صَانَ» (المعتلّ العين)؟", "options": ["مَصون", "صيانة", "صائن", "مُصان بلا إعلال"], "ans": 0}, {"q": "ما اسم المفعول من الفعل «رَتَّبَ»؟", "options": ["تَرتيب", "رَاتِب", "مُرتِّب", "مُرتَّب"], "ans": 3}, {"q": "ما اسم المفعول من الفعل «قَدَّرَ»؟", "options": ["مُقدِّر", "مُقدَّر", "قدير", "قادر"], "ans": 1}, {"q": "ما اسم المفعول من الفعل «حاطَ» (أحاطَ)؟", "options": ["إحاطة", "حائط", "مُحيط", "مُحاط"], "ans": 3}, {"q": "ما اسم المفعول من الفعل «استَنكَرَ»؟", "options": ["مُستنكِر", "ناكر", "إنكار", "مُستنكَر"], "ans": 3}, {"q": "ما اسم المفعول من الفعل «حَمِدَ»؟", "options": ["حامد", "حميد", "مَحمود", "أحمد"], "ans": 2}, {"q": "ما اسم المفعول من الفعل «أكرَمَ» (المزيد بحرف)؟", "options": ["مُكرِم", "مُكرَم", "كارم", "كريم"], "ans": 1}, {"q": "ما اسم المفعول من الفعل «عَفَا» (الناقص)؟", "options": ["عافٍ", "عافية", "عفو", "مَعفوّ"], "ans": 3}, {"q": "ما اسم المفعول من الفعل «حَظِيَ» (الناقص)؟", "options": ["محظوظ فقط", "حظوة", "مَحظيّ", "حاظٍ"], "ans": 2}, {"q": "ما اسم المفعول من الفعل «هَابَ» (المعتلّ العين)؟", "options": ["هائب", "مُهاب فقط دون رد العين", "هيبة", "مَهيب"], "ans": 3}, {"q": "ما اسم المفعول من الفعل «جَزَى» (الناقص)؟", "options": ["جازٍ", "جزيل", "مَجزيّ", "جزاء"], "ans": 2}, {"q": "ما اسم المفعول من الفعل «وَثِقَ»؟", "options": ["مَوثوق", "ميثاق", "واثق", "وثيقة"], "ans": 0}, {"q": "ما اسم المفعول من الفعل «نَصَبَ»؟", "options": ["نُصُب", "نصيب", "مَنصوب", "ناصب"], "ans": 2}], "shooting": [{"q": "أكمل: «إذا كانت لام الفعل الثلاثي الناقص واوًا أُدغِمَت الواوان معًا، وإذا كانت ... قُلبت واو مفعول ياءً».", "options": ["ياءً", "نونًا", "همزة", "ألفًا"], "ans": 0}, {"q": "أكمل: «الثلاثيّ: يُصاغ اسم المفعول منه على وزن ...».", "options": ["مَفعول", "فاعِل", "فعّال", "مُفعِل"], "ans": 0}, {"q": "أكمل: «اسم المفعول من غير الثلاثي يُصاغ على وزن مضارعه المبني للمجهول مع إبدال حرف المضارعة ...».", "options": ["نونًا مكسورة", "ميمًا مضمومة", "همزة مفتوحة", "تاء ساكنة"], "ans": 1}, {"q": "أكمل: «اسم المفعول يُعرَب حسب موقعه في ...».", "options": ["البيت الشعري فقط", "المعجم", "الجملة", "الفعل نفسه"], "ans": 2}, {"q": "أكمل: «اسم المفعول من (الموثوق): فعله ...».", "options": ["وَثِقَ", "استوثَقَ فقط", "واثَقَ", "أوثَقَ فقط"], "ans": 0}, {"q": "أكمل: «الفعل الثلاثيّ المعتلّ العين عند صياغة اسم المفعول منه تُردّ عينه إلى أصلها الواو أو ...».", "options": ["الألف", "الياء", "الهمزة", "النون"], "ans": 1}, {"q": "أكمل: «اسم المفعول من (مَعفوّ): فعله ...، وهو ثلاثي معتلّ الآخر».", "options": ["عَفَا", "عَفَّى", "أعفى", "استعفى"], "ans": 0}, {"q": "أكمل: «غير الثلاثيّ: يُصاغ على وزن مضارعه مع إبدال حرف المضارعة ميمًا مضمومة و... ما قبل الآخر».", "options": ["ضَمّ", "فَتح", "تسكين", "كَسر"], "ans": 1}, {"q": "أكمل: «اسم المفعول من (محمود): فعله ...».", "options": ["حَمَّدَ", "حَمِدَ", "استحمَدَ", "أحمَدَ"], "ans": 1}, {"q": "أكمل: «ذو الخلق ... بين الناس» (اسم مفعول من كَرَّمَ - المزيد).", "options": ["مُكرِّم", "مُكرَّم", "كارِم", "كريم فقط"], "ans": 1}, {"q": "أكمل: «كرامته ...» (اسم مفعول مؤنث من صانَ).", "options": ["مَصونة", "صيانة", "مُصانة بلا إعلال", "صائنة"], "ans": 0}, {"q": "أكمل: «اسم المفعول من (مَجزيّ): فعله ...، وهو ثلاثي ناقص».", "options": ["أجزى فقط", "جَزَّى", "استجزى", "جَزَى"], "ans": 3}, {"q": "أكمل: «اسم المفعول من (مُكرَم): فعله ...».", "options": ["كَرَّمَ فقط", "أكرَمَ", "استكرَمَ", "كَرُمَ"], "ans": 1}, {"q": "أكمل: «الأب المُقتدى ... به» (اسم مفعول من اقتدى - المزيد).", "options": ["اقتداء", "قادٍ", "مُقتدًى", "مُقتدٍ"], "ans": 2}, {"q": "أكمل: «أخطاء المعتذر عنها ... بالحُسنى» (اسم مفعول من عَفَا).", "options": ["عفوّ", "عافية عنها", "مَعفوّ عنها", "عافٍ عنها"], "ans": 2}, {"q": "أكمل: «اسم المفعول من (مَصونة): فعله ...، وهو معتلّ العين».", "options": ["تصاوَنَ", "أصانَ", "صَانَ", "صَوَّنَ"], "ans": 2}, {"q": "أكمل: «اسم المفعول من (مَهيب): فعله ...، وهو معتلّ العين».", "options": ["هَابَ", "أهَابَ", "استهابَ", "هَيَّبَ"], "ans": 0}, {"q": "أكمل: «اسم المفعول يُذكَّر ويُؤنَّث ويُثنَّى و...».", "options": ["يُنكَّر فقط", "يُبنى فقط", "يُحذف", "يُجمَع"], "ans": 3}, {"q": "أكمل تعريف اسم المفعول: «اسم مشتقّ من الفعل المبني للمجهول؛ للدلالة على من ...».", "options": ["وقع عليه الفعل", "غاب عن الفعل", "شهد الفعل", "قام بالفعل"], "ans": 0}, {"q": "أكمل: «الصاحب الموثوق به ... بين الناس» (اسم مفعول من حَمِدَ).", "options": ["أحمد فقط", "مَحمود", "حميد فقط", "حامد"], "ans": 1}], "tf": [{"q": "يُعرَب اسم المفعول حسب موقعه في الجملة.", "options": ["صح", "خطأ"], "ans": 0}, {"q": "اسم المفعول من غير الثلاثي يُصاغ بقاعدة مطابقة تمامًا لصياغة اسم الفاعل من غير الثلاثي دون فرق في الحركة.", "options": ["صح", "خطأ"], "ans": 1}, {"q": "يُصاغ اسم المفعول من غير الثلاثي على وزن (فاعِل) دائمًا.", "options": ["صح", "خطأ"], "ans": 1}, {"q": "يُصاغ اسم المفعول من الفعل الثلاثي على وزن (مَفعول).", "options": ["صح", "خطأ"], "ans": 0}, {"q": "في الفعل الثلاثي المعتل العين مثل «هابَ»، تُردّ عينه إلى أصلها عند صياغة اسم المفعول.", "options": ["صح", "خطأ"], "ans": 0}, {"q": "يدلّ اسم المفعول على من وقع عليه الفعل.", "options": ["صح", "خطأ"], "ans": 0}, {"q": "اسم المفعول اسم مشتقّ من الفعل المبني للمعلوم.", "options": ["صح", "خطأ"], "ans": 1}, {"q": "اسم المفعول من الفعل «اقتدى» هو «مُقتدٍ».", "options": ["صح", "خطأ"], "ans": 1}, {"q": "اسم المفعول من الفعل «صانَ» هو «مَصون».", "options": ["صح", "خطأ"], "ans": 0}, {"q": "اسم المفعول يُذكَّر ويُؤنَّث ويُثنَّى ويُجمَع لأنه مشتقّ.", "options": ["صح", "خطأ"], "ans": 0}, {"q": "اسم المفعول من الفعل «حَمِدَ» هو «حامد».", "options": ["صح", "خطأ"], "ans": 1}, {"q": "عند صياغة اسم المفعول من غير الثلاثي يُبدَل حرف المضارعة ميمًا مضمومة ويُفتح ما قبل الآخر.", "options": ["صح", "خطأ"], "ans": 0}, {"q": "اسم المفعول من الفعل «عَفَا» هو «عافٍ».", "options": ["صح", "خطأ"], "ans": 1}, {"q": "كلمة «مصون» اسم مفعول من الفعل الأجوف «صانَ».", "options": ["صح", "خطأ"], "ans": 0}, {"q": "اسم المفعول من الفعل «كَرَّمَ» هو «مُكرَّم» بفتح الراء المشددة.", "options": ["صح", "خطأ"], "ans": 0}, {"q": "اسم المفعول من الفعل «وَثِقَ» هو «موثوق».", "options": ["صح", "خطأ"], "ans": 0}, {"q": "اسم المفعول لا يُثنّى ولا يُجمع لأنه جامد.", "options": ["صح", "خطأ"], "ans": 1}, {"q": "عند صياغة اسم المفعول من غير الثلاثي يُكسَر ما قبل الآخر كما في اسم الفاعل.", "options": ["صح", "خطأ"], "ans": 1}, {"q": "في جملة «الصاحب الموثوق به محمود بين الناس» كلمتا «الموثوق» و«محمود» اسما مفعول.", "options": ["صح", "خطأ"], "ans": 0}, {"q": "اسم المفعول من الفعل «أكرَمَ» هو «مُكرَم» بفتح الراء.", "options": ["صح", "خطأ"], "ans": 0}], "goal": [{"q": "اسم المفعول من الفعل «جَزَى» هو:", "options": ["أجزى", "مَجزيّ", "جزّاء", "جازٍ"], "ans": 1}, {"q": "اسم المفعول من الفعل «حَمِدَ» هو:", "options": ["أحمد", "حميد فقط", "مَحمود", "حامد"], "ans": 2}, {"q": "ماذا يحدث للفعل الثلاثي اللام المعتل (الناقص) عند صياغة اسم المفعول منه إذا كانت لامه واوًا مُدغَمة؟", "options": ["تُقلب واو مفعول ياء إذا كانت لام الفعل ياء، وإذا كانت واوًا تُدغَم فيها الواوان", "لا يمكن صياغة اسم المفعول منه", "تبقى دون أي تغيير", "يُستبدل الفعل بأكمله"], "ans": 0}, {"q": "اسم المفعول من الفعل «عَفَا» عن (خطئه) هو:", "options": ["أعفى", "عفّاء", "عافٍ", "مَعفوّ"], "ans": 3}, {"q": "اسم المفعول من الفعل «وَثِقَ» هو:", "options": ["أوثق", "وثيق فقط", "مَوثوق", "واثق"], "ans": 2}, {"q": "ماذا يحدث للفعل الثلاثيّ المعتلّ العين عند صياغة اسم المفعول منه (كـ«صان»)؟", "options": ["تتحول العين إلى همزة دائمًا", "تبقى العين كما هي دون تغيير", "ترُدّ عينه المعتلة إلى أصلها الواو أو الياء وتُحذف واو مفعول", "يُحذف حرف العلة نهائيًّا دون بديل"], "ans": 2}, {"q": "اسم المفعول من الفعل «اقتدى» هو:", "options": ["قادٍ", "مُقتدًى", "مُقتدٍ", "اقتداء"], "ans": 1}, {"q": "في جملة «الصاحب الموثوق به محمود بين الناس» ما اسم المفعول فيها؟", "options": ["الصاحب فقط", "الناس فقط", "الموثوق ومحمود", "لا يوجد اسم مفعول"], "ans": 2}, {"q": "في جملة «كرامته مصونة» ما اسم المفعول؟", "options": ["الاثنان معًا بالتساوي", "كرامته", "مصونة", "لا يوجد"], "ans": 2}, {"q": "اسم المفعول من الفعل «صَانَ» هو:", "options": ["مَصونة (مَصون)", "صائن", "أصان", "صيّان"], "ans": 0}, {"q": "كيف يُعرَب اسم المفعول في الجملة؟", "options": ["يُبنى دائمًا على الفتح", "حسب موقعه في الجملة", "لا يقبل الإعراب مطلقًا", "يُبنى دائمًا على الكسر"], "ans": 1}, {"q": "اسم المفعول من الفعل «هَابَ» هو:", "options": ["هيّاب", "هائب", "مَهيب", "أهاب"], "ans": 2}, {"q": "من أي فعل يُصاغ اسم المفعول؟", "options": ["الفعل المبني للمجهول", "الفعل الناسخ فقط", "الفعل المبني للمعلوم فقط", "الفعل الجامد فقط"], "ans": 0}, {"q": "كيف يُصاغ اسم المفعول من الفعل غير الثلاثي؟", "options": ["بحذف حرف العلة دون قاعدة", "على وزن مضارعه مع إبدال حرف المضارعة ميمًا مضمومة وفتح ما قبل الآخر", "بزيادة تاء في آخره فقط", "على وزن مَفعول دائمًا مهما كان الفعل"], "ans": 1}, {"q": "اسم المفعول من الفعل «أكرَمَ» هو:", "options": ["كارم", "مُكرَم", "كريم فقط", "مُكرِم"], "ans": 1}, {"q": "اسم المفعول من الفعل «مَجَّدَ» (المزيد) هو:", "options": ["ماجد", "مُمَجِّد", "مُمَجَّد", "مجيد فقط"], "ans": 2}, {"q": "هل يُثنّى اسم المفعول ويُجمع كاسم الفاعل؟", "options": ["لا يُثنَّى ولا يُجمَع أبدًا", "يُجمع فقط دون تثنية", "نعم، يُذكَّر ويُؤنَّث ويُثنَّى ويُجمَع", "يُثنَّى فقط دون جمع"], "ans": 2}, {"q": "ما تعريف اسم المفعول؟", "options": ["اسم يدل على من قام بالفعل", "اسم مشتقّ من الفعل المبني للمجهول؛ للدلالة على من وقع عليه الفعل", "اسم يدل على مكان الفعل فقط", "اسم يدل على زمان الفعل فقط"], "ans": 1}, {"q": "اسم المفعول من الفعل «استوفى» هو:", "options": ["مُستوفًى", "مُستوفٍ", "استيفاء", "وافٍ"], "ans": 0}, {"q": "على أي وزن يُصاغ اسم المفعول من الفعل الثلاثي؟", "options": ["فعّال", "مَفعول", "فاعِل", "مُفعِل"], "ans": 1}], "genius": [{"q": "ما دلالة التلازم بين قاعدتي اسم الفاعل واسم المفعول من حيث الإعراب والتصرف (التذكير والتأنيث والتثنية والجمع)؟", "options": ["أن كليهما حرفان مبنيان لا محل لهما من الإعراب", "أن اسم المفعول وحده يخضع لهذه الأحكام دون اسم الفاعل", "أن كليهما اسمان مشتقان معربان متصرفان يخضعان لنفس الأحكام الصرفية والنحوية العامة للأسماء رغم اختلاف دلالتيهما", "أن كليهما فعلان لا اسمان"], "ans": 2}, {"q": "ما القيمة البلاغية لاستخدام اسم المفعول في وصف الصفات الملازمة للممدوح في نصوص المدح؟", "options": ["يقتصر استخدامه على الذمّ لا المدح", "يمنح الوصف طابع الثبوت والاستحقاق الدائم للصفة الحسنة كأنها لصيقة بصاحبها", "يوحي بأن الصفة طارئة وزائلة سريعًا", "لا قيمة بلاغية له مقارنة بالفعل المضارع"], "ans": 1}, {"q": "ما دلالة كون بعض الأفعال الثلاثية لا يُستعمل منها اسم مفعول تام لعدم تعدّيها كفعل «جلس» أو «قام»؟", "options": ["أن اسم المفعول يُشتق أساسًا من الأفعال المتعدية التي يقع فعلها على مفعول به يمكن الإخبار عنه", "أن الأفعال اللازمة أكثر قابلية لصياغة اسم المفعول من المتعدية", "لا علاقة بين تعدي الفعل وصياغة اسم المفعول منه", "أن كل الأفعال بلا استثناء تصاغ منها أسماء مفعول متعدية"], "ans": 0}, {"q": "ما الأثر الدلالي لإدغام الواوين عند صياغة اسم المفعول من الفعل الناقص الذي لامه واو؟", "options": ["لا وظيفة صرفية أو صوتية لهذا الإدغام", "تسهيل النطق مع الحفاظ على الأصل الصرفي للكلمة دون إخلال بالمعنى", "حذف الدلالة على المفعولية بالكامل", "تغيير جذري في معنى الفعل الأصلي"], "ans": 1}, {"q": "ما وجه التكامل بين درسي اسم الفاعل واسم المفعول في بناء الجملة العربية الوصفية؟", "options": ["أحدهما يغني عن الآخر تمامًا في جميع السياقات", "لا علاقة بين الدرسين وهما مستقلان تمامًا عن بعضهما", "كلاهما يؤديان المعنى ذاته دون أي تمايز وظيفي", "يمنحان اللغة أداتين صرفيتين متكاملتين للتعبير عن طرفي الحدث: من قام به ومن وقع عليه، فتتسع دائرة الوصف والدقة"], "ans": 3}, {"q": "ما الفرق الجوهري بين وزن اسم الفاعل (فاعِل) ووزن اسم المفعول (مَفعول) في الفعل الثلاثي؟", "options": ["لا فرق دلالي بين الوزنين إطلاقًا", "كلاهما يدل على وقوع الفعل عليه", "الأول يدل على من قام بالفعل والثاني على من وقع عليه الفعل، وهذا الفرق ينعكس في اختلاف الصياغة الصرفية", "كلاهما يدل على القيام بالفعل"], "ans": 2}, {"q": "ما دلالة قابلية اسم المفعول للعمل عمل فعله في بعض السياقات كنائب فاعل نحو «الجائزة ممنوحٌ صاحبُها»؟", "options": ["أن العمل خاص باسم الفاعل فقط دون اسم المفعول", "أنه يحمل معنى الفعل المبني للمجهول فيرفع نائب فاعل كما يفعل الفعل ذاته", "أنه اسم جامد لا علاقة له بعمل الأفعال", "لا يمكن لاسم المفعول أن يرفع أي شيء بعده"], "ans": 1}, {"q": "علام يدل اشتراط أن يكون الفعل مبنيًّا للمجهول عند اشتقاق اسم المفعول؟", "options": ["أن اسم المفعول يخصّ من وقع عليه الحدث دون تحديد فاعله، اتساقًا مع صيغة المبني للمجهول", "أن اسم المفعول يخصّ من قام بالحدث كاسم الفاعل تمامًا", "أن الفعل المعلوم هو الأصل الوحيد للاشتقاق", "لا علاقة للبناء للمجهول باشتقاق اسم المفعول"], "ans": 0}, {"q": "لماذا يُعَدّ الانتباه إلى نوع الفعل (ثلاثي أو غير ثلاثي، صحيح أو معتلّ) خطوة أولى ضرورية قبل صياغة اسم المفعول؟", "options": ["لأن كل نوع من الأفعال يخضع لقاعدة صرفية مختلفة تحدد الوزن والإعلال المناسبين لصياغة اسم مفعول سليم", "لأن الأفعال المعتلة لا يُشتق منها اسم مفعول بتاتًا", "لأن نوع الفعل لا علاقة له بصياغة المشتقات إطلاقًا", "لأن جميع الأفعال تصاغ منها أسماء المفعول بطريقة واحدة موحدة دون استثناء"], "ans": 0}, {"q": "ما دلالة استخدام اسم المفعول «مُقدَّر» في سياق الحديث عن قيمة الوقت أو الجهد؟", "options": ["لا علاقة لاسم المفعول بمفهوم التقدير", "الدلالة على إهمال هذه القيمة تمامًا", "الدلالة على أن هذه القيمة محل تقدير فعلي ثابت من الآخرين لا مجرد احتمال", "الدلالة على أن التقدير لم يقع بعد"], "ans": 2}, {"q": "ما الفارق الدقيق بين إعلال اسم الفاعل واسم المفعول في الفعل المعتلّ العين مثل «صان» ← «صائن» و«مَصون»؟", "options": ["اسم الفاعل هو الوحيد الذي يخضع للإعلال", "في اسم الفاعل تُقلب العين همزة، وفي اسم المفعول تُردّ العين إلى أصلها الواو أو الياء", "اسم المفعول لا يُشتق أصلًا من الأفعال المعتلة العين", "لا فرق بين الإعلالين وكلاهما يتبع نفس القاعدة"], "ans": 1}, {"q": "ما دلالة التوازي الصرفي بين «مُستقبَل» (اسم مفعول) و«مُستقبِل» (اسم فاعل) من الفعل «استقبل»؟", "options": ["أن الفرق بينهما يكمن في عدد الحروف لا في الحركة", "أن الصيغتين مترادفتان تمامًا في المعنى والاستخدام", "يوضح أن التمييز بين الصيغتين في هذا النوع من الأفعال يقع على حركة ما قبل الآخر فقط رغم تطابق بقية الحروف", "أن إحدى الصيغتين لا تصاغ من هذا الفعل أصلًا"], "ans": 2}, {"q": "لماذا اختير حرف الميم المضموم بديلًا عن حرف المضارعة في صياغة اسم المفعول من غير الثلاثي؟", "options": ["لأن اختياره عشوائي دون قاعدة", "لأنه العلامة الصرفية الثابتة التي تميز الاسم المشتقّ عن صيغة الفعل المضارع نفسها", "لأنه حرف زائد بلا وظيفة صرفية", "لأن الميم تدل على الفاعلية لا المفعولية"], "ans": 1}, {"q": "ما وظيفة اسم المفعول حين يُستخدم خبرًا في جملة مثل «كرامته مصونة»؟", "options": ["نفي وقوع فعل الصيانة أصلًا", "توكيد أن المبتدأ هو من قام بفعل الصيانة", "الإخبار عن المبتدأ بصفة ثابتة ناتجة عن وقوع فعل الصيانة عليه من فاعل محذوف", "الدلالة على زمن الفعل لا على الصفة"], "ans": 2}, {"q": "ما دلالة اختيار صيغة اسم المفعول «مَعفوّ عنها» بدل الفعل «يُعفى عنها» في وصف الأخطاء؟", "options": ["الدلالة على رفض العفو أصلًا", "لا فرق بين الصيغتين في المعنى", "الدلالة على تحقق الصفة واستقرارها بعد وقوع فعل العفو، لا مجرد احتمال حدوثه", "الدلالة على استمرار الخطأ دون عفو"], "ans": 2}, {"q": "ما دلالة استخدام اسم المفعول «موثوق» بدل الفعل «يُوثَق به» في وصف الصاحب؟", "options": ["الدلالة على نفي صفة الثقة عن الشخص", "لا فرق بين الصيغتين في الدلالة", "الدلالة على أن الثقة مؤقتة وزائلة", "إبراز الصفة الثابتة الدائمة في الشخص بدل الحدث المتجدد الذي يوحي به الفعل"], "ans": 3}, {"q": "ما دلالة استخدام اسم المفعول في العناوين والأوصاف الرسمية مثل «المُعتمَد» أو «المُصادَق عليه»؟", "options": ["الدلالة على رفض الاعتماد أو التصديق", "لا علاقة لاسم المفعول بالسياقات الرسمية", "الدلالة على أن الأمر لا يزال قيد النظر", "إضفاء طابع الرسمية والتوثيق على ما وقع عليه الإجراء بصيغة ثابتة معتمدة"], "ans": 3}, {"q": "ما دلالة ضمّ ما قبل الآخر وفتحه في اسم المفعول من غير الثلاثي مقارنة بكسره في اسم الفاعل؟", "options": ["لا علاقة بين الحركة والدلالة إطلاقًا", "كلاهما يُفتح في الحالتين دون تمييز", "الفتح يدل على النفي في الحالتين", "الفتح علامة صرفية تميز اسم المفعول (المتلقي للفعل) عن اسم الفاعل الذي يُكسر ما قبل آخره (القائم بالفعل)"], "ans": 3}, {"q": "لماذا يُعَدّ التمييز بين «مُكرِم» (اسم فاعل) و«مُكرَم» (اسم مفعول) من الفعل «أكرَمَ» دقيقًا وضروريًّا؟", "options": ["لأن إحداهما لا تُستخدم في اللغة الفصحى إطلاقًا", "لأن الكلمتين تُنطقان بطريقة مختلفة تمامًا في كل الحروف", "لأن الفرق بينهما يكمن فقط في حركة ما قبل الآخر (كسر أو فتح) رغم التطابق شبه التام في الحروف", "لأن التمييز بينهما غير ممكن نحويًّا مطلقًا"], "ans": 2}, {"q": "لماذا يحتاج الفعل غير الثلاثي المعتل الآخر عند صياغة اسم المفعول منه عناية خاصة بالإعلال؟", "options": ["لأن هذا النوع من الأفعال لا يُشتق منه اسم مفعول إطلاقًا", "لأن التقاء حرف العلة بحركة الإعراب أو التنوين يستوجب تعديلًا صوتيًّا يحافظ على سلاسة النطق دون كسر القاعدة الصرفية", "لأن حرف العلة يُحذف دون أي بديل صوتي", "لأن الإعلال هنا اختياري وليس له أي قاعدة"], "ans": 1}], "memory": [{"q": "ما اسم المفعول من الفعل «زَيَّنَ»؟", "a": "مُزَيَّن"}, {"q": "ما اسم المفعول من الفعل «أهمَلَ»؟", "a": "مُهمَل"}, {"q": "ما اسم المفعول من الفعل «وَطِنَ» (استَوطَنَ)؟", "a": "مُستوطَن"}, {"q": "ما اسم المفعول من الفعل «حَفِظَ»؟", "a": "محفوظ"}, {"q": "ما اسم المفعول من الفعل «قَدَّمَ» (المزيد بحرف)؟", "a": "مُقدَّم"}, {"q": "ما اسم المفعول من الفعل «استَقبَلَ» (المزيد بثلاثة أحرف)؟", "a": "مُستقبَل"}, {"q": "ما اسم المفعول من الفعل «شَيَّدَ»؟", "a": "مُشيَّد"}, {"q": "ما اسم المفعول من الفعل «صَانَ» (المعتلّ العين)؟", "a": "مَصون"}, {"q": "ما اسم المفعول من الفعل «رَتَّبَ»؟", "a": "مُرتَّب"}, {"q": "ما اسم المفعول من الفعل «قَدَّرَ»؟", "a": "مُقدَّر"}, {"q": "ما اسم المفعول من الفعل «حاطَ» (أحاطَ)؟", "a": "مُحاط"}, {"q": "ما اسم المفعول من الفعل «استَنكَرَ»؟", "a": "مُستنكَر"}, {"q": "ما اسم المفعول من الفعل «حَمِدَ»؟", "a": "مَحمود"}, {"q": "ما اسم المفعول من الفعل «أكرَمَ» (المزيد بحرف)؟", "a": "مُكرَم"}, {"q": "ما اسم المفعول من الفعل «عَفَا» (الناقص)؟", "a": "مَعفوّ"}, {"q": "ما اسم المفعول من الفعل «حَظِيَ» (الناقص)؟", "a": "مَحظيّ"}, {"q": "ما اسم المفعول من الفعل «هَابَ» (المعتلّ العين)؟", "a": "مَهيب"}, {"q": "ما اسم المفعول من الفعل «جَزَى» (الناقص)؟", "a": "مَجزيّ"}, {"q": "ما اسم المفعول من الفعل «وَثِقَ»؟", "a": "مَوثوق"}, {"q": "ما اسم المفعول من الفعل «نَصَبَ»؟", "a": "مَنصوب"}]}};
+
+const GAMES = [
+  {key:"bubbles", title:"الفقاعات المتساقطة", icon:"🫧", bg:"#e0f2fe", desc:"اضغط على الفقاعة التي تحمل الإجابة الصحيحة قبل أن تصل إلى الأرض"},
+  {key:"shooting", title:"اصطياد الأهداف", icon:"🎯", bg:"#fee2e2", desc:"صوّب على الهدف المتحرك الذي يحمل الإجابة الصحيحة"},
+  {key:"memory", title:"الذاكرة", icon:"🧠", bg:"#ede9fe", desc:"اقلب البطاقات وطابق كل سؤال مع إجابته الصحيحة"},
+  {key:"tf", title:"صح وخطأ", icon:"⚖️", bg:"#fef3c7", desc:"اقرأ العبارة واحكم عليها: صحيحة أم خاطئة؟"},
+  {key:"goal", title:"تسجيل الأهداف", icon:"⚽", bg:"#dcfce7", desc:"اختر الإجابة الصحيحة لتسدد الكرة في المرمى وتهزم الحارس"},
+  {key:"genius", title:"تحدي العباقرة", icon:"🏆", bg:"#fdf6e3", desc:"اختيار من متعدد في سباق مع الزمن: 30 ثانية لكل سؤال"}
+];
+const AR = n => String(n).replace(/\d/g, d => "٠١٢٣٤٥٦٧٨٩"[d]);
+const $ = id => document.getElementById(id);
+const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+function shuffle(a){ a = a.slice(); for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
+
+/* ---------- Audio ---------- */
+let actx = null;
+function tone(f, type, d, v){ try{ if(!actx) actx = new (window.AudioContext||window.webkitAudioContext)(); const o=actx.createOscillator(), g=actx.createGain(); o.type=type; o.frequency.value=f; g.gain.setValueAtTime(v||.08, actx.currentTime); g.gain.exponentialRampToValueAtTime(.0001, actx.currentTime+d); o.connect(g); g.connect(actx.destination); o.start(); o.stop(actx.currentTime+d);}catch(e){} }
+const sOk = () => { tone(660,"sine",.12); setTimeout(()=>tone(880,"sine",.18),110); };
+const sBad = () => tone(180,"sawtooth",.3,.06);
+const sTap = () => tone(520,"triangle",.06,.05);
+
+/* ---------- UI helpers ---------- */
+let fbTimer;
+function feedback(ok, extra){
+  const f = $("fb"); f.className = ok ? "ok" : "bad";
+  f.innerHTML = ""; f.appendChild(document.createTextNode(ok ? "إجابة صحيحة، أحسنت! 👏" : "إجابة غير صحيحة"));
+  if (extra) f.appendChild(el("small", "", extra));
+  requestAnimationFrame(()=>f.classList.add("show"));
+  clearTimeout(fbTimer); fbTimer = setTimeout(()=>f.classList.remove("show"), ok ? 1000 : 1900);
+  ok ? sOk() : sBad();
+}
+function toast(msg){ const t=$("toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("show"),1800); }
+function copyText(txt){
+  if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(txt).then(()=>true).catch(()=>fallbackCopy(txt));
+  return Promise.resolve(fallbackCopy(txt));
+}
+function fallbackCopy(txt){ const ta=document.createElement("textarea"); ta.value=txt; ta.style.position="fixed"; ta.style.opacity="0"; document.body.appendChild(ta); ta.select(); let ok=false; try{ok=document.execCommand("copy");}catch(e){} ta.remove(); return ok; }
+function lessonUrl(){ return location.protocol.startsWith("http") ? location.href.split("#")[0].split("?")[0] : "https://darsfele3ba4-debug.github.io/mayada/lesson-5/"; }
+function copyLink(){ copyText(lessonUrl()).then(ok => toast(ok ? "تم نسخ رابط الدرس ✔" : "انسخ الرابط من شريط العنوان")); }
+function confetti(){ const c=["#10b981","#e9c46a","#e8789a","#38bdf8","#c9972c"]; for(let i=0;i<50;i++){ const d=el("div","confetti"); d.style.left=Math.random()*100+"vw"; d.style.background=c[i%c.length]; d.style.animationDuration=(1.8+Math.random()*1.6)+"s"; d.style.animationDelay=(Math.random()*.5)+"s"; document.body.appendChild(d); setTimeout(()=>d.remove(),4200);} }
+
+/* ---------- State ---------- */
+let G = null;          // current game definition
+let S = null;          // session state
+let raf = null, timers = [];
+function stopAll(){ if(raf) cancelAnimationFrame(raf); raf=null; timers.forEach(clearTimeout); timers.forEach(clearInterval); timers=[]; if(S) S.alive=false; }
+const later = (fn, ms) => { const h = setTimeout(fn, ms); timers.push(h); return h; };
+
+function buildMenu(){
+  const grid = $("grid");
+  GAMES.forEach(g => {
+    const n = g.key === "memory" ? LESSON.games.memory.length : LESSON.games[g.key].length;
+    const c = el("button","gcard");
+    const ic = el("div","ic",g.icon); ic.style.background = g.bg;
+    const tx = el("div");
+    tx.appendChild(el("h3","",g.title)); tx.appendChild(el("p","",g.desc));
+    tx.appendChild(el("span","tag", g.key==="memory" ? AR(n)+" زوجًا من البطاقات" : AR(n)+" سؤالًا"));
+    c.appendChild(ic); c.appendChild(tx);
+    c.onclick = () => startGame(g);
+    grid.appendChild(c);
+  });
+}
+
+function toMenu(){ stopAll(); $("game").style.display="none"; $("menu").style.display="block"; window.scrollTo({top:0}); }
+
+function startGame(g){
+  stopAll(); G = g;
+  $("menu").style.display="none"; $("game").style.display="block";
+  $("gTitle").textContent = g.icon + " " + g.title;
+  window.scrollTo({top:0});
+  if (g.key === "memory") return startMemory();
+  const qs = shuffle(LESSON.games[g.key]);
+  S = {alive:true, qs, i:0, ok:0, bad:0, wrong:[], t0:Date.now(), total:qs.length};
+  updateBar(); nextQ();
+}
+function updateBar(){
+  $("cOk").textContent = "✔ " + AR(S.ok); $("cBad").textContent = "✘ " + AR(S.bad);
+  $("pBar").style.width = (S.i / S.total * 100) + "%";
+}
+function nextQ(){
+  stopAll(); S.alive = true;
+  if (S.i >= S.total) return showResult();
+  updateBar();
+  const q = S.qs[S.i];
+  ({bubbles:qBubbles, shooting:qShooting, tf:qTF, goal:qGoal, genius:qGenius})[G.key](q);
+}
+function answer(ok, q, chosen, delayOk, delayBad){
+  if (!S.alive) return; S.alive = false;
+  if (raf) cancelAnimationFrame(raf); raf = null;
+  timers.forEach(clearTimeout); timers.forEach(clearInterval); timers = [];
+  const correct = q.options[q.ans];
+  if (ok) S.ok++; else { S.bad++; S.wrong.push({q:q.q, y:chosen, c:correct}); }
+  feedback(ok, ok ? "" : "الإجابة الصحيحة: " + correct);
+  if (!ok){ const qb=document.querySelector(".qbox"); if(qb){qb.classList.remove("shake"); void qb.offsetWidth; qb.classList.add("shake");} }
+  S.i++; updateBar();
+  const h = setTimeout(nextQ, ok ? (delayOk||1100) : (delayBad||2100));
+  timers.push(h);
+}
+function qBox(q, extraCls){
+  const b = el("div","qbox"+(extraCls?" "+extraCls:""));
+  b.appendChild(el("span","qn","سؤال "+AR(S.i+1)+" من "+AR(S.total)));
+  b.appendChild(document.createTextNode(q.q));
+  return b;
+}
+
+/* ---------- 1) Falling bubbles ---------- */
+function qBubbles(q){
+  const st = $("stage"); st.innerHTML = "";
+  st.appendChild(qBox(q));
+  const ar = el("div","arena sky"); st.appendChild(ar);
+  const W = ar.clientWidth, H = ar.clientHeight;
+  const lanes = W >= 640 ? 4 : 2;
+  const laneW = W / lanes;
+  const opts = shuffle(q.options.map((t,i)=>({t, ok:i===q.ans})));
+  const items = opts.map((o,k) => {
+    const b = el("div","bubble",o.t);
+    const lane = lanes === 4 ? k : k % 2;
+    b.style.width = (laneW - 14) + "px";
+    b.style.left = (lane*laneW + 7) + "px";
+    ar.appendChild(b);
+    const h = b.offsetHeight;
+    const y = lanes === 4 ? -h - k*45 : -h - k*(h*0.85);
+    const it = {b, o, y, h, wob: Math.random()*6.28, dead:false};
+    const hitFn = ev => {
+      ev.preventDefault();
+      if (!S.alive || it.dead) return;
+      it.dead = true;
+      b.classList.add(o.ok ? "good" : "badb"); b.classList.add("pop");
+      if (!o.ok) items.forEach(x => { if (x.o.ok) x.b.classList.add("good"); });
+      answer(o.ok, q, o.t);
+    };
+    b.addEventListener("pointerdown", hitFn);
+    return it;
+  });
+  const speed = H / 9.5;     // px per second
+  let last = performance.now();
+  const loop = now => {
+    if (!S.alive) return;
+    const dt = Math.min(.05,(now-last)/1000); last = now;
+    for (const it of items){
+      if (it.dead) continue;
+      it.y += speed*dt; it.wob += dt*2.4;
+      const tf = `translate(${Math.sin(it.wob)*5}px, ${it.y}px)`;
+      it.b.style.transform = tf; it.b.style.setProperty("--tf", tf);
+      if (it.y > H){
+        it.dead = true; it.b.style.display = "none";
+        if (it.o.ok){ answer(false, q, "سقطت الفقاعة الصحيحة ⏬"); return; }
+      }
+    }
+    raf = requestAnimationFrame(loop);
+  };
+  raf = requestAnimationFrame(loop);
+}
+
+/* ---------- 2) Target shooting ---------- */
+function qShooting(q){
+  const st = $("stage"); st.innerHTML = "";
+  st.appendChild(qBox(q));
+  const ar = el("div","arena range"); st.appendChild(ar);
+  const W = ar.clientWidth, H = ar.clientHeight, rowH = H/4;
+  const opts = shuffle(q.options.map((t,i)=>({t, ok:i===q.ans})));
+  const items = opts.map((o,k) => {
+    const t = el("div","target"); t.appendChild(el("span","eye")); t.appendChild(el("span","",o.t));
+    ar.appendChild(t);
+    const w = Math.min(t.offsetWidth, W-8), h = t.offsetHeight;
+    if (t.offsetWidth > W-8){ t.style.whiteSpace="normal"; t.style.width=(W-8)+"px"; }
+    const it = {t, o, w, h, x: Math.random()*(W-w), y: k*rowH + (rowH-h)/2, v: (55+Math.random()*55) * (Math.random()<.5?-1:1) * Math.max(.7, W/700), dead:false};
+    t.addEventListener("pointerdown", ev => {
+      ev.preventDefault();
+      if (!S.alive || it.dead) return;
+      const r = ar.getBoundingClientRect(); const s = el("div","shot"); s.style.left=(ev.clientX-r.left)+"px"; s.style.top=(ev.clientY-r.top)+"px"; ar.appendChild(s); setTimeout(()=>s.remove(),500);
+      it.dead = true; t.classList.add(o.ok ? "good" : "badt"); t.classList.add("hit");
+      if (!o.ok) items.forEach(x => { if (x.o.ok) x.t.classList.add("good"); });
+      answer(o.ok, q, o.t);
+    });
+    return it;
+  });
+  ar.addEventListener("pointerdown", ev => {
+    if (ev.target !== ar) return;
+    const r = ar.getBoundingClientRect(); const s = el("div","shot"); s.style.left=(ev.clientX-r.left)+"px"; s.style.top=(ev.clientY-r.top)+"px"; ar.appendChild(s); setTimeout(()=>s.remove(),500); sTap();
+  });
+  let last = performance.now();
+  const loop = now => {
+    if (!S.alive) return;
+    const dt = Math.min(.05,(now-last)/1000); last = now;
+    for (const it of items){
+      if (it.dead) continue;
+      it.x += it.v*dt;
+      if (it.x < 0){ it.x = 0; it.v = -it.v; }
+      if (it.x > W - it.w){ it.x = Math.max(0, W - it.w); it.v = -it.v; }
+      const tf = `translate(${it.x}px, ${it.y}px)`;
+      it.t.style.transform = tf; it.t.style.setProperty("--tf", tf);
+    }
+    raf = requestAnimationFrame(loop);
+  };
+  raf = requestAnimationFrame(loop);
+}
+
+/* ---------- 3) True / False ---------- */
+function qTF(q){
+  const st = $("stage"); st.innerHTML = "";
+  st.appendChild(qBox(q, "tfq"));
+  const wrap = el("div","tf");
+  const mk = (cls, sym, label, idx) => {
+    const b = el("button","tfb "+cls); b.appendChild(el("b","",sym)); b.appendChild(el("span","",label));
+    b.onclick = () => {
+      if (!S.alive) return;
+      const ok = idx === q.ans;
+      [...wrap.children].forEach((x,j) => { if (j !== q.ans) x.classList.add("dim"); else x.classList.add("mark"); });
+      answer(ok, q, q.options[idx]);
+    };
+    return b;
+  };
+  wrap.appendChild(mk("t","✔","صح",0));
+  wrap.appendChild(mk("f","✘","خطأ",1));
+  st.appendChild(wrap);
+}
+
+/* ---------- 4) Goal scoring ---------- */
+const KEEPER_SVG = '<svg viewBox="0 0 64 84" width="64" height="84"><circle cx="32" cy="14" r="10" fill="#f2c9a0"/><path d="M22 12a10 10 0 0 1 20 0z" fill="#1f2937"/><rect x="18" y="25" width="28" height="30" rx="8" fill="#f59e0b"/><text x="32" y="46" text-anchor="middle" font-size="14" font-weight="900" fill="#fff" font-family="Cairo">1</text><rect x="2" y="26" width="18" height="8" rx="4" fill="#f59e0b"/><rect x="44" y="26" width="18" height="8" rx="4" fill="#f59e0b"/><circle cx="4" cy="30" r="6" fill="#16a34a"/><circle cx="60" cy="30" r="6" fill="#16a34a"/><rect x="21" y="54" width="9" height="26" rx="4" fill="#111827"/><rect x="34" y="54" width="9" height="26" rx="4" fill="#111827"/></svg>';
+const CORNERS = [{x:76,y:22},{x:24,y:22},{x:76,y:48},{x:24,y:48}]; // percentages inside pitch
+function qGoal(q){
+  const st = $("stage"); st.innerHTML = "";
+  st.appendChild(qBox(q));
+  const p = el("div","pitch");
+  p.appendChild(el("div","box"));
+  const goal = el("div","goal"); p.appendChild(goal);
+  CORNERS.forEach((c,i)=>{ const d=el("div","corner",AR(i+1)); d.style.left=c.x+"%"; d.style.top=c.y+"%"; p.appendChild(d); });
+  const kp = el("div","keeper"); kp.innerHTML = KEEPER_SVG; p.appendChild(kp);
+  const ball = el("div","ball","⚽"); p.appendChild(ball);
+  const msg = el("div","bigmsg"); p.appendChild(msg);
+  st.appendChild(p);
+  const opts = shuffle(q.options.map((t,i)=>({t, ok:i===q.ans})));
+  const box = el("div","opts gopts");
+  opts.forEach((o,k) => {
+    const b = el("button","opt"); b.appendChild(el("span","k",AR(k+1))); b.appendChild(el("span","",o.t));
+    b.onclick = () => {
+      if (!S.alive || box.dataset.lock) return;
+      box.dataset.lock = 1;
+      [...box.children].forEach(x => x.disabled = true);
+      b.classList.add(o.ok ? "right" : "wrong");
+      if (!o.ok) opts.forEach((x,j) => { if (x.ok) box.children[j].classList.add("right"); });
+      const c = CORNERS[k];
+      // keeper dives: to the same corner when the answer is wrong, to the far side when correct
+      const kc = o.ok ? CORNERS[[1,0,3,2][k]] : c;
+      kp.classList.add("dive");
+      const pw = p.clientWidth, ph = p.clientHeight;
+      const dx = (kc.x-50)/100*pw, dy = (kc.y-46)/100*ph;
+      kp.style.transform = `translate(${dx}px, ${dy}px) rotate(${kc.x>50?55:-55}deg)`;
+      ball.classList.add("fly");
+      if (o.ok){ ball.style.left = c.x+"%"; ball.style.top = c.y+"%"; }
+      else { ball.style.left = c.x+"%"; ball.style.top = (c.y+4)+"%"; later(()=>{ ball.style.left=(c.x>50?95:5)+"%"; ball.style.top="80%"; }, 520); }
+      later(() => {
+        msg.textContent = o.ok ? "جووول! ⚽" : "تصدّى الحارس! 🧤";
+        msg.classList.add("show");
+        if (o.ok){ goal.classList.add("net"); }
+      }, 480);
+      later(() => answer(o.ok, q, o.t, 1300, 2100), 600);
+    };
+    box.appendChild(b);
+  });
+  st.appendChild(box);
+}
+
+/* ---------- 5) Genius challenge ---------- */
+const GENIUS_TIME = 30;
+function qGenius(q){
+  const st = $("stage"); st.innerHTML = "";
+  const tm = el("div","timer"); const bar = el("div","bar"); const fill = el("i"); bar.appendChild(fill);
+  const sec = el("div","sec",AR(GENIUS_TIME)); tm.appendChild(sec); tm.appendChild(bar);
+  st.appendChild(tm);
+  st.appendChild(qBox(q));
+  const opts = shuffle(q.options.map((t,i)=>({t, ok:i===q.ans})));
+  const box = el("div","opts");
+  const letters = ["أ","ب","ج","د"];
+  const reveal = () => opts.forEach((x,j) => { box.children[j].disabled = true; if (x.ok) box.children[j].classList.add("right"); });
+  opts.forEach((o,k) => {
+    const b = el("button","opt"); b.appendChild(el("span","k",letters[k])); b.appendChild(el("span","",o.t));
+    b.onclick = () => { if (!S.alive) return; reveal(); if (!o.ok) b.classList.add("wrong"); answer(o.ok, q, o.t); };
+    box.appendChild(b);
+  });
+  st.appendChild(box);
+  const t0 = Date.now();
+  const iv = setInterval(() => {
+    if (!S.alive){ clearInterval(iv); return; }
+    const left = Math.max(0, GENIUS_TIME - (Date.now()-t0)/1000);
+    fill.style.width = (left/GENIUS_TIME*100) + "%";
+    sec.textContent = AR(Math.ceil(left));
+    const low = left <= 5; fill.classList.toggle("low", low); sec.classList.toggle("low", low);
+    if (left <= 0){ clearInterval(iv); reveal(); answer(false, q, "انتهى الوقت ⏰"); }
+  }, 100);
+  timers.push(iv);
+}
+
+/* ---------- 6) Memory ---------- */
+const PAIRS_PER_ROUND = 5;
+function startMemory(){
+  const pairs = shuffle(LESSON.games.memory);
+  const rounds = [];
+  for (let i=0;i<pairs.length;i+=PAIRS_PER_ROUND) rounds.push(pairs.slice(i,i+PAIRS_PER_ROUND));
+  S = {alive:true, mem:true, rounds, r:0, ok:0, bad:0, matched:0, total:pairs.length, i:0, wrong:[], t0:Date.now()};
+  memRound();
+}
+function memRound(){
+  const st = $("stage"); st.innerHTML = "";
+  $("cOk").textContent = "✔ " + AR(S.matched); $("cBad").textContent = "✘ " + AR(S.bad);
+  $("pBar").style.width = (S.matched / S.total * 100) + "%";
+  st.appendChild(el("div","mround","الجولة "+AR(S.r+1)+" من "+AR(S.rounds.length)+" — طابق كل بطاقة سؤال مع بطاقة إجابتها"));
+  const grid = el("div","mgrid"); st.appendChild(grid);
+  const cards = shuffle(S.rounds[S.r].flatMap((p,idx) => [{id:idx, kind:"q", t:p.q, p}, {id:idx, kind:"a", t:p.a, p}]));
+  let open = [], lock = false, found = 0;
+  cards.forEach(c => {
+    const m = el("div","mcard "+c.kind); const inn = el("div","in");
+    const fr = el("div","fr"); const img = document.createElement("img"); img.src="../logo.jpeg"; img.alt=""; img.onerror=()=>{fr.textContent="؟";}; fr.appendChild(img);
+    const bk = el("div","bk"); bk.appendChild(el("em","",c.kind==="q"?"سؤال":"إجابة")); bk.appendChild(el("span","",c.t));
+    inn.appendChild(fr); inn.appendChild(bk); m.appendChild(inn); grid.appendChild(m);
+    m.onclick = () => {
+      if (lock || m.classList.contains("open") || !S.alive) return;
+      m.classList.add("open"); sTap(); open.push({m,c});
+      if (open.length < 2) return;
+      const [a,b] = open; open = [];
+      if (a.c.id === b.c.id && a.c.kind !== b.c.kind){
+        a.m.classList.add("done"); b.m.classList.add("done");
+        S.matched++; found++; sOk();
+        $("cOk").textContent = "✔ " + AR(S.matched); $("pBar").style.width = (S.matched / S.total * 100) + "%";
+        if (found === S.rounds[S.r].length){
+          later(() => { S.r++; if (S.r < S.rounds.length) memRound(); else showResult(); }, 900);
+        }
+      } else {
+        lock = true; S.bad++; sBad();
+        $("cBad").textContent = "✘ " + AR(S.bad);
+        a.m.classList.add("miss"); b.m.classList.add("miss");
+        later(() => { a.m.classList.remove("open","miss"); b.m.classList.remove("open","miss"); lock = false; }, 1000);
+      }
+    };
+  });
+}
+
+/* ---------- Results & WhatsApp ---------- */
+function fmtTime(ms){ const s=Math.round(ms/1000); return "\u2066"+AR(Math.floor(s/60))+":"+AR(String(s%60).padStart(2,"0"))+"\u2069"; }
+function showResult(){
+  stopAll();
+  const st = $("stage"); st.innerHTML = "";
+  $("pBar").style.width = "100%";
+  const time = Date.now() - S.t0;
+  let pct, big, small, line;
+  if (S.mem){
+    const acc = S.total / (S.total + S.bad);
+    pct = Math.round(acc*100);
+    big = AR(S.matched) + "/" + AR(S.total); small = "زوجًا";
+    line = "محاولات غير صحيحة: " + AR(S.bad) + " · الزمن: " + fmtTime(time);
+  } else {
+    pct = Math.round(S.ok / S.total * 100);
+    big = AR(S.ok) + "/" + AR(S.total); small = "إجابة صحيحة";
+    line = "الزمن: " + fmtTime(time);
+  }
+  const stars = pct >= 90 ? 3 : pct >= 70 ? 2 : pct >= 50 ? 1 : 0;
+  const title = ["حاول مرة أخرى، تستطيع! 💪","بداية جيدة! 🌱","أداء رائع! 🌟","ممتاز يا بطل! 🏆"][stars];
+  const r = el("div","res");
+  r.appendChild(el("div","stars","⭐".repeat(stars) + "☆".repeat(3-stars)));
+  const ring = el("div","ring"); ring.style.setProperty("--p", pct);
+  const rin = el("div"); rin.appendChild(el("b","",big)); rin.appendChild(el("span","",small)); ring.appendChild(rin); r.appendChild(ring);
+  r.appendChild(el("h3","",title));
+  r.appendChild(el("p","sub", G.title + " · " + line));
+
+  const send = el("div","send");
+  send.appendChild(el("label","","اكتب اسمك لإرسال نتيجتك إلى الأستاذة ميادة"));
+  const inp = document.createElement("input"); inp.type="text"; inp.placeholder="الاسم الثلاثي"; inp.maxLength=60;
+  try{ inp.value = localStorage.getItem("mayada_student") || ""; }catch(e){}
+  send.appendChild(inp);
+  const warn = el("div","warn","من فضلك اكتب اسمك أولًا"); send.appendChild(warn);
+  const wa = el("button","btn wa","📤 أرسل النتيجة للأستاذة ميادة على واتساب");
+  wa.onclick = () => {
+    const name = inp.value.trim();
+    if (!name){ warn.style.display="block"; inp.focus(); return; }
+    warn.style.display="none";
+    try{ localStorage.setItem("mayada_student", name); }catch(e){}
+    const lines = [
+      "السلام عليكم أستاذة ميادة 🌸",
+      "👤 اسم الطالب: " + name,
+      "🏫 الصف الثالث الإعدادي",
+      "📖 الدرس: " + LESSON.plain,
+      "🎮 اللعبة: " + G.title
+    ];
+    if (S.mem){ lines.push("✅ الأزواج المطابقة: " + S.matched + " من " + S.total, "❌ محاولات غير صحيحة: " + S.bad, "📊 الدقة: " + pct + "%"); }
+    else { lines.push("✅ النتيجة: " + S.ok + " من " + S.total + " (" + pct + "%)", "❌ الإجابات الخاطئة: " + S.bad); }
+    lines.push("⏱️ الزمن: " + (Math.floor(time/60000)) + ":" + String(Math.round(time/1000)%60).padStart(2,"0"), "⭐ التقييم: " + "⭐".repeat(stars || 0) + (stars ? "" : "—"));
+    window.open("https://wa.me/" + PHONE + "?text=" + encodeURIComponent(lines.join("\n")), "_blank");
+  };
+  send.appendChild(wa);
+  r.appendChild(send);
+
+  const bt = el("div","btns");
+  const again = el("button","btn pri","↻ العب مرة أخرى"); again.onclick = () => startGame(G);
+  const menu = el("button","btn sec","اختر لعبة أخرى"); menu.onclick = toMenu;
+  bt.appendChild(again); bt.appendChild(menu); r.appendChild(bt);
+
+  if (!S.mem && S.wrong.length){
+    const rv = el("div","review"); rv.appendChild(el("h4","","راجع أخطاءك (" + AR(S.wrong.length) + ")"));
+    S.wrong.forEach(w => {
+      const d = el("div","rv"); d.appendChild(el("p","",w.q));
+      const y = el("div","y","إجابتك: " + w.y); const c = el("div","c","الصحيحة: " + w.c);
+      d.appendChild(y); d.appendChild(c); rv.appendChild(d);
+    });
+    r.appendChild(rv);
+  }
+  st.appendChild(r);
+  if (stars >= 2) confetti();
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+
+buildMenu();
+</script>
+</body>
+</html>
