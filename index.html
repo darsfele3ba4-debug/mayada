@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>درس في لعبة | الأستاذة ميادة محمد - الصف الثالث الإعدادي</title>
-<meta name="description" content="منصة ألعاب تعليمية تفاعلية في اللغة العربية للصف الثالث الإعدادي مع الأستاذة ميادة محمد: ٧ دروس و٤٢ لعبة و٧٠٠ سؤال">
+<title>درس في لعبة | الأستاذة ميادة محمد - اللغة العربية</title>
+<meta name="description" content="منصة ألعاب تعليمية تفاعلية في اللغة العربية مع الأستاذة ميادة محمد: ٨ دروس و٤٨ لعبة و٨٠٠ سؤال">
 <meta property="og:title" content="درس في لعبة | الأستاذة ميادة محمد">
-<meta property="og:description" content="ألعاب تعليمية تفاعلية في اللغة العربية - الصف الثالث الإعدادي">
+<meta property="og:description" content="ألعاب تعليمية تفاعلية في اللغة العربية - الصف الثالث الإعدادي والصف الأول الثانوي">
 <meta property="og:image" content="https://darsfele3ba4-debug.github.io/mayada/logo.jpeg">
 <meta name="theme-color" content="#065f46">
 <link rel="icon" href="logo.jpeg">
@@ -40,6 +40,7 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 .sec-h h2:before{content:"";width:6px;height:24px;border-radius:4px;background:var(--gold)}
 .all{display:inline-flex;align-items:center;gap:6px;background:var(--em8);color:#fff;font-weight:800;padding:9px 16px;border-radius:12px;font-size:.88rem}
 .all:hover{background:var(--em7)}
+.grade{font-size:1.02rem;font-weight:900;color:var(--em8);margin:18px 0 10px;padding:6px 14px;background:var(--em0);border:1px solid var(--line);border-radius:12px;display:inline-block}
 .list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
 .lesson{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;display:flex;gap:14px;transition:transform .2s,box-shadow .2s}
 .lesson:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(6,95,70,.12)}
@@ -72,11 +73,11 @@ footer b{color:var(--em8)}
     <div class="logo"><img src="logo.jpeg" alt="شعار الأستاذة ميادة محمد"></div>
     <small>منصة درس في لعبة</small>
     <h1>العب وتعلَّم مع <span>الأستاذة ميادة محمد</span></h1>
-    <p>اللغة العربية · الصف الثالث الإعدادي</p>
+    <p>اللغة العربية · الصف الثالث الإعدادي · الصف الأول الثانوي</p>
     <div class="stats">
-      <div class="stat"><b>٧</b><span>دروس</span></div>
-      <div class="stat"><b>٤٢</b><span>لعبة</span></div>
-      <div class="stat"><b>٧٠٠</b><span>سؤال</span></div>
+      <div class="stat"><b>٨</b><span>دروس</span></div>
+      <div class="stat"><b>٤٨</b><span>لعبة</span></div>
+      <div class="stat"><b>٨٠٠</b><span>سؤال</span></div>
     </div>
   </div>
 </section>
@@ -95,13 +96,15 @@ footer b{color:var(--em8)}
     <h2>الدروس</h2>
     <button class="all" onclick="copyAll(this)">📋 نسخ روابط كل الدروس</button>
   </div>
+
+  <h3 class="grade">🎓 الصف الثالث الإعدادي</h3>
   <div class="list">
     <article class="lesson">
       <div class="lnum">١</div>
       <div class="lbody">
         <span class="cat" style="background:#e0f2fe;color:#0369a1">🎧 استماع</span>
         <h3>نَصُّ اسْتِمَاعٍ: آدَابُ التَّعَامُلِ مَعَ الوَالِدَيْنِ</h3>
-        <p class="meta">٦ ألعاب · ١٠٠ سؤال</p>
+        <p class="meta">الصف الثالث الإعدادي · ٦ ألعاب · ١٠٠ سؤال</p>
         <div class="lact">
           <a class="go" href="lesson-1/">ابدأ الدرس ←</a>
           <button class="cp" data-slug="lesson-1" data-title="نص استماع: آداب التعامل مع الوالدين" onclick="copyOne(this)">
@@ -116,7 +119,7 @@ footer b{color:var(--em8)}
       <div class="lbody">
         <span class="cat" style="background:#dcfce7;color:#15803d">📖 قراءة</span>
         <h3>نَصُّ قِرَاءَةٍ: أَغْلَى مِنَ الذَّهَبِ</h3>
-        <p class="meta">٦ ألعاب · ١٠٠ سؤال</p>
+        <p class="meta">الصف الثالث الإعدادي · ٦ ألعاب · ١٠٠ سؤال</p>
         <div class="lact">
           <a class="go" href="lesson-2/">ابدأ الدرس ←</a>
           <button class="cp" data-slug="lesson-2" data-title="نص قراءة: أغلى من الذهب" onclick="copyOne(this)">
@@ -131,7 +134,7 @@ footer b{color:var(--em8)}
       <div class="lbody">
         <span class="cat" style="background:#ede9fe;color:#6d28d9">✍️ نحو</span>
         <h3>القَوَاعِدُ النَّحْوِيَّةُ: اسْمُ الفَاعِلِ</h3>
-        <p class="meta">٦ ألعاب · ١٠٠ سؤال</p>
+        <p class="meta">الصف الثالث الإعدادي · ٦ ألعاب · ١٠٠ سؤال</p>
         <div class="lact">
           <a class="go" href="lesson-3/">ابدأ الدرس ←</a>
           <button class="cp" data-slug="lesson-3" data-title="القواعد النحوية: اسم الفاعل" onclick="copyOne(this)">
@@ -146,7 +149,7 @@ footer b{color:var(--em8)}
       <div class="lbody">
         <span class="cat" style="background:#dcfce7;color:#15803d">📖 قراءة</span>
         <h3>نَصُّ قِرَاءَةٍ: الصَّدَاقَةُ</h3>
-        <p class="meta">٦ ألعاب · ١٠٠ سؤال</p>
+        <p class="meta">الصف الثالث الإعدادي · ٦ ألعاب · ١٠٠ سؤال</p>
         <div class="lact">
           <a class="go" href="lesson-4/">ابدأ الدرس ←</a>
           <button class="cp" data-slug="lesson-4" data-title="نص قراءة: الصداقة" onclick="copyOne(this)">
@@ -161,7 +164,7 @@ footer b{color:var(--em8)}
       <div class="lbody">
         <span class="cat" style="background:#ede9fe;color:#6d28d9">✍️ نحو</span>
         <h3>القَوَاعِدُ النَّحْوِيَّةُ: اسْمُ المَفْعُولِ</h3>
-        <p class="meta">٦ ألعاب · ١٠٠ سؤال</p>
+        <p class="meta">الصف الثالث الإعدادي · ٦ ألعاب · ١٠٠ سؤال</p>
         <div class="lact">
           <a class="go" href="lesson-5/">ابدأ الدرس ←</a>
           <button class="cp" data-slug="lesson-5" data-title="القواعد النحوية: اسم المفعول" onclick="copyOne(this)">
@@ -176,7 +179,7 @@ footer b{color:var(--em8)}
       <div class="lbody">
         <span class="cat" style="background:#fce7f3;color:#be185d">🪶 شعر</span>
         <h3>نَصٌّ شِعْرِيٌّ: تَحِيَّةٌ لِلشَّبَابِ</h3>
-        <p class="meta">٦ ألعاب · ١٠٠ سؤال</p>
+        <p class="meta">الصف الثالث الإعدادي · ٦ ألعاب · ١٠٠ سؤال</p>
         <div class="lact">
           <a class="go" href="lesson-6/">ابدأ الدرس ←</a>
           <button class="cp" data-slug="lesson-6" data-title="نص شعري: تحية للشباب" onclick="copyOne(this)">
@@ -191,10 +194,28 @@ footer b{color:var(--em8)}
       <div class="lbody">
         <span class="cat" style="background:#fef3c7;color:#b45309">🔤 إملاء</span>
         <h3>القَوَاعِدُ الإِمْلَائِيَّةُ: الأَلِفُ اللَّيِّنَةُ</h3>
-        <p class="meta">٦ ألعاب · ١٠٠ سؤال</p>
+        <p class="meta">الصف الثالث الإعدادي · ٦ ألعاب · ١٠٠ سؤال</p>
         <div class="lact">
           <a class="go" href="lesson-7/">ابدأ الدرس ←</a>
           <button class="cp" data-slug="lesson-7" data-title="القواعد الإملائية: الألف اللينة" onclick="copyOne(this)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
+            <span>نسخ الرابط</span>
+          </button>
+        </div>
+      </div>
+    </article>
+  </div>
+  <h3 class="grade">🎓 الصف الأول الثانوي</h3>
+  <div class="list">
+    <article class="lesson">
+      <div class="lnum">٨</div>
+      <div class="lbody">
+        <span class="cat" style="background:#ffedd5;color:#c2410c">📜 أدب</span>
+        <h3>الأَدَبُ فِي العَصْرِ الجَاهِلِيِّ</h3>
+        <p class="meta">الصف الأول الثانوي · ٦ ألعاب · ١٠٠ سؤال</p>
+        <div class="lact">
+          <a class="go" href="lesson-8/">ابدأ الدرس ←</a>
+          <button class="cp" data-slug="lesson-8" data-title="الأدب في العصر الجاهلي" onclick="copyOne(this)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg>
             <span>نسخ الرابط</span>
           </button>
@@ -218,7 +239,7 @@ footer b{color:var(--em8)}
 <script>
 "use strict";
 const SITE = "https://darsfele3ba4-debug.github.io/mayada/";
-const LESSONS = [{"slug": "lesson-1", "plain": "نص استماع: آداب التعامل مع الوالدين", "num": 1}, {"slug": "lesson-2", "plain": "نص قراءة: أغلى من الذهب", "num": 2}, {"slug": "lesson-3", "plain": "القواعد النحوية: اسم الفاعل", "num": 3}, {"slug": "lesson-4", "plain": "نص قراءة: الصداقة", "num": 4}, {"slug": "lesson-5", "plain": "القواعد النحوية: اسم المفعول", "num": 5}, {"slug": "lesson-6", "plain": "نص شعري: تحية للشباب", "num": 6}, {"slug": "lesson-7", "plain": "القواعد الإملائية: الألف اللينة", "num": 7}];
+const LESSONS = [{"slug": "lesson-1", "plain": "نص استماع: آداب التعامل مع الوالدين", "num": 1, "grade": "الصف الثالث الإعدادي"}, {"slug": "lesson-2", "plain": "نص قراءة: أغلى من الذهب", "num": 2, "grade": "الصف الثالث الإعدادي"}, {"slug": "lesson-3", "plain": "القواعد النحوية: اسم الفاعل", "num": 3, "grade": "الصف الثالث الإعدادي"}, {"slug": "lesson-4", "plain": "نص قراءة: الصداقة", "num": 4, "grade": "الصف الثالث الإعدادي"}, {"slug": "lesson-5", "plain": "القواعد النحوية: اسم المفعول", "num": 5, "grade": "الصف الثالث الإعدادي"}, {"slug": "lesson-6", "plain": "نص شعري: تحية للشباب", "num": 6, "grade": "الصف الثالث الإعدادي"}, {"slug": "lesson-7", "plain": "القواعد الإملائية: الألف اللينة", "num": 7, "grade": "الصف الثالث الإعدادي"}, {"slug": "lesson-8", "plain": "الأدب في العصر الجاهلي", "num": 8, "grade": "الصف الأول الثانوي"}];
 function base(){
   if (!location.protocol.startsWith("http")) return SITE;
   let p = location.href.split("#")[0].split("?")[0];
@@ -241,9 +262,9 @@ function copyOne(btn){
   });
 }
 function copyAll(btn){
-  const txt = ["📚 درس في لعبة مع الأستاذة ميادة محمد", "اللغة العربية - الصف الثالث الإعدادي", "",
-    ...LESSONS.map(l => "📖 الدرس " + l.num + ": " + l.plain + "\n" + urlOf(l.slug) + "\n")].join("\n");
-  copyText(txt).then(ok => toast(ok ? "تم نسخ روابط الدروس السبعة ✔" : "تعذّر النسخ"));
+  const txt = ["📚 درس في لعبة مع الأستاذة ميادة محمد", "اللغة العربية", "",
+    ...LESSONS.map(l => "📖 الدرس " + l.num + ": " + l.plain + " (" + l.grade + ")\n" + urlOf(l.slug) + "\n")].join("\n");
+  copyText(txt).then(ok => toast(ok ? "تم نسخ روابط كل الدروس ✔" : "تعذّر النسخ"));
 }
 </script>
 </body>
